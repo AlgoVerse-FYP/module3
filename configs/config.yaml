@@ -1,0 +1,18 @@
+data:
+  train_csv: data/raw/fraudTrain.csv
+  test_csv: data/raw/fraudTest.csv
+  val_fraction: 0.15
+  nrows: 100000        # small number while learning; null for full data later
+
+features:
+  window: 5
+
+model:
+  lstm_units: 64
+  embed_dim: 8
+  dropout: 0.3
+
+training:
+  batch_size: 2048
+  learning_rate: 0.001
+  epochs: 12

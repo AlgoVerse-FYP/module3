@@ -1,0 +1,5 @@
+PHASE 1 - PREPROCESSING
+rows before 100000  after 100000
+amount raw range 1.00-12788.07  log range 0.69-9.46
+all customers time-ordered: True
+temporal split leak-free: True

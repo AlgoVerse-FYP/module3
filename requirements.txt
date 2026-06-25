@@ -1,0 +1,10 @@
+tensorflow>=2.15
+pandas
+numpy
+scikit-learn
+tf2onnx
+onnx
+shap
+matplotlib
+pyyaml
+optuna

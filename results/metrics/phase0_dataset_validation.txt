@@ -1,0 +1,8 @@
+PHASE 0 - DATASET VALIDATION
+fraud rate: 0.0099
+amount legit 67.37 fraud 526.01
+night rate 0.0349 day rate 0.0021
+baseline ROC-AUC: 0.9899
+VERDICT: learnable
+rows taken for this check: 100000 
+
