@@ -1,4 +1,4 @@
-# Module 3 — Sequential Multi-Channel Fraud Detection
+# Module 3: Sequential Multi-Channel Fraud Detection
 
 Bidirectional LSTM + merchant-network fusion for sequential fraud detection.
 Every design choice is justified by an experiment (see `experiments/`).
