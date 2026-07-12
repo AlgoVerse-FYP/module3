@@ -33,18 +33,6 @@ module3/
 └── docs/                       → workplan, Q&A guide, plan
 ```
 
-## Workflow (maps to workplan phases)
-1. Put data in `data/raw/`.
-2. `experiments/ablation/learnability_check.py` — validate the dataset (Phase 0).
-3. `src/features/phase1_features.py` — preprocessing + features (Phase 1-2).
-4. `src/preprocessing/synthetic_injection.py` — hard cases (Phase 3, after sign-off).
-5. `src/models/phase2_model.py` — train (Phase 4).
-6. `experiments/window_size/` — justify the window (Phase 5).
-7. `experiments/ablation/` — baselines + ablation on native AND injected fraud (Phase 5).
-8. `experiments/hyperparameter_tuning/` — tune (Phase 6).
-9. `src/evaluation/evaluate_model.py` — multi-seed evaluation (Phase 7).
-10. `src/explainability/` — SHAP + calibration (Phase 8).
-
 ## Principle
 `config.yaml` holds every hyperparameter. Experiments read from it and write
 results to `results/`. Nothing is hard-coded in two places — one change, one run,
