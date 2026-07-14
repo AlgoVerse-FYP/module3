@@ -1,0 +1,45 @@
+rows=100000  fraud=990 (0.990%)
+
+============================================================
+(A) SINGLE-FEATURE AUC  (>=0.95 = investigate before trusting model)
+============================================================
+               feature  solo_auc flag
+               amt_log    0.8295     
+           merch_amt_z    0.8186     
+              hour_cos    0.8030     
+                dt_log    0.6984     
+             speed_log    0.6836     
+    recv_vol_prior_log    0.6015     
+            is_digital    0.6002     
+        channel_switch    0.5595     
+              hour_sin    0.5447     
+               dow_cos    0.5380     
+      recv_count_prior    0.5325     
+recv_unique_cust_prior    0.5324     
+               dow_sin    0.5281     
+             step_dist    0.5180     
+    cust_merch_novelty    0.5050      
+
+============================================================
+(B) THE SPLIT YOU ACTUALLY TRAIN ON  (phase2_model.make_splits)
+============================================================
+  train_ts          : (Timestamp('2019-01-01 00:00:18'), Timestamp('2019-02-28 15:37:34'))
+  val_ts            : (Timestamp('2019-01-01 00:09:20'), Timestamp('2019-02-28 15:40:20'))
+  train_customers   : 782
+  val_customers     : 141
+  shared_customers  : 1
+  time_overlap      : True
+  train_fraud       : 888
+  val_fraud         : 102
+  --> temporal? NO - train/val overlap in time
+
+============================================================
+(C) PROPOSED OUT-OF-TIME SPLIT  (val strictly later than train)
+============================================================
+  cutoff            : 2019-02-19 13:28:54.500000
+  train_ts          : (Timestamp('2019-01-01 00:00:18'), Timestamp('2019-02-19 13:28:50'))
+  val_ts            : (Timestamp('2019-02-19 13:29:20'), Timestamp('2019-02-28 15:40:20'))
+  time_overlap      : False
+  train_fraud       : 825
+  val_fraud         : 165
+  val_rows          : 15000

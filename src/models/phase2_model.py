@@ -46,15 +46,16 @@ def build_model(window, n_seq_features, n_categories, n_net_features,
     out = layers.Dense(1, activation="sigmoid")(h)
     return keras.Model([seq_in, net_in], out)
 
-def make_splits(train_data, val_fraction):
+def make_splits(train_data):
     Xs, Xn, y = train_data["X_seq"], train_data["X_net"], train_data["y"]
-    cut = int(len(y) * (1 - val_fraction))      # validation = last slice (temporal)
-    return (Xs[:cut], Xn[:cut], y[:cut]), (Xs[cut:], Xn[cut:], y[cut:])
+    is_val = train_data["is_val"]                 # True = out-of-time validation rows
+    tr, va = ~is_val, is_val
+    return (Xs[tr], Xn[tr], y[tr]), (Xs[va], Xn[va], y[va])
 
 
 def train_model(train_data, cfg, bidirectional=True, seed=42):
     tf.random.set_seed(seed); np.random.seed(seed)
-    (Xs, Xn, y), (Xsv, Xnv, yv) = make_splits(train_data, cfg["data"]["val_fraction"])
+    (Xs, Xn, y), (Xsv, Xnv, yv) = make_splits(train_data)   # was: make_splits(train_data, cfg["data"]["val_fraction"])
 
     m = build_model(cfg["features"]["window"], 1 + len(SEQ_NUMERIC),
                     train_data["n_categories"], len(NET_FEATURES),
@@ -76,7 +77,8 @@ def train_model(train_data, cfg, bidirectional=True, seed=42):
 def _run():
     cfg = load_config()
     nrows = cfg["data"]["nrows"]
-    train = build_dataset(path(cfg["data"]["train_csv"]), nrows=nrows)
+    train = build_dataset(path(cfg["data"]["train_csv"]), nrows=nrows,
+                      val_fraction=cfg["data"]["val_fraction"])
     m, hist, _ = train_model(train, cfg, bidirectional=cfg["model"]["bidirectional"])
     m.save(path("results/models/module3_model.keras"))
 

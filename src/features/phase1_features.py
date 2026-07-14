@@ -58,31 +58,41 @@ def merchant_features(df):
     df = df.set_index("index").sort_index()                        # restore original order
     return df[NET_FEATURES]
 
-def build_dataset(csv_path, fit_from=None, nrows=None, window=None, return_df=False):
+def build_dataset(csv_path, fit_from=None, nrows=None, window=None,
+                  val_fraction=None, return_df=False):
     cfg = load_config()
     if window is None:
         window = cfg["features"]["window"]
 
     raw = pd.read_csv(csv_path, nrows=nrows)
-    df = clean_data(raw)            # Phase 1
-    df = engineer(df)              # Part 1
-    df = df.join(merchant_features(df))   # Part 2
+    df = clean_data(raw)
+    df = engineer(df)
+    df = df.join(merchant_features(df))
 
-    if fit_from is None:           # training: learn the encoders
+    # ---- out-of-time internal split (training file only) ----
+    is_val = None
+    if fit_from is None and val_fraction:
+        cutoff = df["ts"].quantile(1 - val_fraction)
+        is_val = (df["ts"] >= cutoff).to_numpy()          # later slice = validation
+
+    # ---- encoders ----
+    if fit_from is None:
         cats = sorted(df["category"].unique())
-        cat_index = {c: i+1 for i, c in enumerate(cats)}
+        cat_index = {c: i + 1 for i, c in enumerate(cats)}
         norm = None
-    else:                          # test: reuse training encoders (no leakage)
+    else:
         cat_index, norm = fit_from["cat_index"], fit_from["norm"]
     df["cat_idx"] = df["category"].map(cat_index).fillna(0).astype("float32")
 
-    to_norm = ["amt_log","dt_log","step_dist","speed_log","recv_count_prior",
-               "recv_unique_cust_prior","recv_vol_prior_log","merch_amt_z"]
+    to_norm = ["amt_log", "dt_log", "step_dist", "speed_log", "recv_count_prior",
+               "recv_unique_cust_prior", "recv_vol_prior_log", "merch_amt_z"]
     if norm is None:
-        norm = {c: (float(df[c].mean()), float(df[c].std()+1e-6)) for c in to_norm}
+        fit_rows = ~is_val if is_val is not None else np.ones(len(df), bool)  # train-only stats
+        norm = {c: (float(df.loc[fit_rows, c].mean()),
+                    float(df.loc[fit_rows, c].std() + 1e-6)) for c in to_norm}
     dfn = df.copy()
     for c in to_norm:
-        m, s = norm[c]; dfn[c] = ((dfn[c]-m)/s).astype("float32")
+        m, s = norm[c]; dfn[c] = ((dfn[c] - m) / s).astype("float32")
 
     step_cols = ["cat_idx"] + SEQ_NUMERIC
     step_mat = dfn[step_cols].to_numpy("float32")
@@ -92,18 +102,19 @@ def build_dataset(csv_path, fit_from=None, nrows=None, window=None, return_df=Fa
     n, f = step_mat.shape
 
     X = np.zeros((n, window, f), dtype="float16")
-    is_new = np.empty(n, bool); is_new[0]=True; is_new[1:] = cc[1:]!=cc[:-1]
+    is_new = np.empty(n, bool); is_new[0] = True; is_new[1:] = cc[1:] != cc[:-1]
     first_idx = np.maximum.accumulate(np.where(is_new, np.arange(n), 0))
     pos = np.arange(n) - first_idx
     for p_ in range(window):
-        back = window-1-p_
+        back = window - 1 - p_
         src = np.arange(n) - back
         ok = (src >= 0) & (pos >= back)
         rows = np.where(ok)[0]
         X[rows, p_, :] = step_mat[src[rows]].astype("float16")
 
     result = {"X_seq": X, "X_net": net_mat.astype("float16"), "y": y,
-              "cat_index": cat_index, "norm": norm, "n_categories": len(cat_index)+1}
+              "cat_index": cat_index, "norm": norm,
+              "n_categories": len(cat_index) + 1, "is_val": is_val}
     if return_df:
         result["df"] = df
     return result
