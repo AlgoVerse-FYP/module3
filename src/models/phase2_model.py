@@ -26,14 +26,18 @@ def build_model(window, n_seq_features, n_categories, n_net_features,
     # ----- sequence branch -----
     seq_in = keras.Input((window, n_seq_features), name="seq_input")
     cat = layers.Lambda(lambda x: x[:, :, 0])(seq_in)        # column 0 = category index
-    rest = layers.Lambda(lambda x: x[:, :, 1:])(seq_in)      # columns 1+ = the float features
-    emb = layers.Embedding(n_categories, embed_dim)(cat)     # category -> learned vector
+    rest = layers.Lambda(lambda x: x[:, :, 1:])(seq_in)      # columns 1+ = float features
+
+    # real steps have category index >= 1; padded steps are all-zero (index 0)
+    mask = layers.Lambda(lambda c: tf.not_equal(c, 0.0))(cat)        # (batch, window) bool
+    cat_int = layers.Lambda(lambda c: tf.cast(c, tf.int32))(cat)
+    emb = layers.Embedding(n_categories, embed_dim)(cat_int)         # category -> vector
     merged = layers.Concatenate()([emb, rest])
-    masked = layers.Masking(0.0)(merged)                     # ignore padded steps
+
     lstm = layers.LSTM(lstm_units)
     if bidirectional:
-        lstm = layers.Bidirectional(lstm)                   # forward + backward
-    seq_repr = lstm(masked)
+        lstm = layers.Bidirectional(lstm)
+    seq_repr = lstm(merged, mask=mask)                              # mask applied to the LSTM
 
     # ----- network branch -----
     net_in = keras.Input((n_net_features,), name="net_input")
@@ -64,8 +68,9 @@ def train_model(train_data, cfg, bidirectional=True, seed=42):
                     dropout=cfg["model"]["dropout"],
                     bidirectional=bidirectional)
     m.compile(optimizer=keras.optimizers.Adam(cfg["training"]["learning_rate"]),
-              loss=focal_loss())
-    es = keras.callbacks.EarlyStopping(monitor="val_loss",
+              loss=focal_loss(),
+              metrics=[keras.metrics.AUC(curve="PR", name="pr_auc")])
+    es = keras.callbacks.EarlyStopping(monitor="val_pr_auc", mode="max",
                                        patience=cfg["training"].get("early_stopping_patience", 2),
                                        restore_best_weights=True)
     hist = m.fit([Xs, Xn], y, validation_data=([Xsv, Xnv], yv),

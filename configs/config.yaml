@@ -11,8 +11,9 @@ model:
   lstm_units: 64
   embed_dim: 8
   dropout: 0.3
+  bidirectional: true
 
 training:
   batch_size: 2048
   learning_rate: 0.001
-  epochs: 12
+  epochs: 50

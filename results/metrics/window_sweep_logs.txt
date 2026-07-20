@@ -1,0 +1,1047 @@
+--- window=3 seed=42 ---
+WARNING:tensorflow:From C:\Users\asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\backend\tensorflow\core.py:233: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+I0000 00:00:1784578192.558369   27064 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/25
+E0000 00:00:1784578198.880100   27064 util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+42/42 - 8s - 195ms/step - loss: 0.0318 - pr_auc: 0.0076 - val_loss: 0.0072 - val_pr_auc: 0.0939
+Epoch 2/25
+42/42 - 2s - 43ms/step - loss: 0.0043 - pr_auc: 0.2867 - val_loss: 0.0033 - val_pr_auc: 0.5932
+Epoch 3/25
+42/42 - 3s - 60ms/step - loss: 0.0030 - pr_auc: 0.5667 - val_loss: 0.0029 - val_pr_auc: 0.6724
+Epoch 4/25
+42/42 - 1s - 28ms/step - loss: 0.0027 - pr_auc: 0.6147 - val_loss: 0.0027 - val_pr_auc: 0.6987
+Epoch 5/25
+42/42 - 1s - 28ms/step - loss: 0.0026 - pr_auc: 0.6366 - val_loss: 0.0026 - val_pr_auc: 0.7157
+Epoch 6/25
+42/42 - 1s - 34ms/step - loss: 0.0025 - pr_auc: 0.6543 - val_loss: 0.0024 - val_pr_auc: 0.7296
+Epoch 7/25
+42/42 - 1s - 28ms/step - loss: 0.0023 - pr_auc: 0.6728 - val_loss: 0.0024 - val_pr_auc: 0.7399
+Epoch 8/25
+42/42 - 1s - 31ms/step - loss: 0.0023 - pr_auc: 0.6824 - val_loss: 0.0023 - val_pr_auc: 0.7480
+Epoch 9/25
+42/42 - 1s - 30ms/step - loss: 0.0022 - pr_auc: 0.6964 - val_loss: 0.0022 - val_pr_auc: 0.7600
+Epoch 10/25
+42/42 - 1s - 29ms/step - loss: 0.0021 - pr_auc: 0.7082 - val_loss: 0.0021 - val_pr_auc: 0.7680
+Epoch 11/25
+42/42 - 1s - 33ms/step - loss: 0.0021 - pr_auc: 0.7188 - val_loss: 0.0020 - val_pr_auc: 0.7768
+Epoch 12/25
+42/42 - 1s - 26ms/step - loss: 0.0020 - pr_auc: 0.7330 - val_loss: 0.0020 - val_pr_auc: 0.7873
+Epoch 13/25
+42/42 - 1s - 28ms/step - loss: 0.0019 - pr_auc: 0.7420 - val_loss: 0.0019 - val_pr_auc: 0.7948
+Epoch 14/25
+42/42 - 1s - 34ms/step - loss: 0.0019 - pr_auc: 0.7514 - val_loss: 0.0018 - val_pr_auc: 0.8064
+Epoch 15/25
+42/42 - 1s - 31ms/step - loss: 0.0018 - pr_auc: 0.7655 - val_loss: 0.0018 - val_pr_auc: 0.8173
+Epoch 16/25
+42/42 - 1s - 35ms/step - loss: 0.0017 - pr_auc: 0.7802 - val_loss: 0.0017 - val_pr_auc: 0.8271
+Epoch 17/25
+42/42 - 2s - 57ms/step - loss: 0.0017 - pr_auc: 0.7923 - val_loss: 0.0017 - val_pr_auc: 0.8344
+Epoch 18/25
+42/42 - 1s - 28ms/step - loss: 0.0016 - pr_auc: 0.7986 - val_loss: 0.0016 - val_pr_auc: 0.8444
+Epoch 19/25
+42/42 - 1s - 31ms/step - loss: 0.0015 - pr_auc: 0.8149 - val_loss: 0.0016 - val_pr_auc: 0.8526
+Epoch 20/25
+42/42 - 1s - 29ms/step - loss: 0.0015 - pr_auc: 0.8278 - val_loss: 0.0015 - val_pr_auc: 0.8610
+Epoch 21/25
+42/42 - 1s - 29ms/step - loss: 0.0013 - pr_auc: 0.8473 - val_loss: 0.0014 - val_pr_auc: 0.8683
+Epoch 22/25
+42/42 - 1s - 27ms/step - loss: 0.0013 - pr_auc: 0.8558 - val_loss: 0.0014 - val_pr_auc: 0.8754
+Epoch 23/25
+42/42 - 1s - 28ms/step - loss: 0.0012 - pr_auc: 0.8701 - val_loss: 0.0013 - val_pr_auc: 0.8799
+Epoch 24/25
+42/42 - 1s - 28ms/step - loss: 0.0011 - pr_auc: 0.8844 - val_loss: 0.0013 - val_pr_auc: 0.8909
+Epoch 25/25
+42/42 - 1s - 32ms/step - loss: 9.9570e-04 - pr_auc: 0.9010 - val_loss: 0.0013 - val_pr_auc: 0.8954
+    val PR-AUC=0.8963  ROC=0.9927  epochs=25  (0.78 min)
+
+--- window=5 seed=42 ---
+Epoch 1/25
+42/42 - 7s - 172ms/step - loss: 0.0208 - pr_auc: 0.0108 - val_loss: 0.0052 - val_pr_auc: 0.3628
+Epoch 2/25
+42/42 - 2s - 41ms/step - loss: 0.0033 - pr_auc: 0.5117 - val_loss: 0.0030 - val_pr_auc: 0.6604
+Epoch 3/25
+42/42 - 2s - 42ms/step - loss: 0.0025 - pr_auc: 0.6526 - val_loss: 0.0025 - val_pr_auc: 0.7138
+Epoch 4/25
+42/42 - 3s - 61ms/step - loss: 0.0023 - pr_auc: 0.6862 - val_loss: 0.0024 - val_pr_auc: 0.7350
+Epoch 5/25
+42/42 - 2s - 40ms/step - loss: 0.0022 - pr_auc: 0.6998 - val_loss: 0.0022 - val_pr_auc: 0.7489
+Epoch 6/25
+42/42 - 2s - 41ms/step - loss: 0.0021 - pr_auc: 0.7104 - val_loss: 0.0022 - val_pr_auc: 0.7607
+Epoch 7/25
+42/42 - 3s - 63ms/step - loss: 0.0021 - pr_auc: 0.7260 - val_loss: 0.0021 - val_pr_auc: 0.7700
+Epoch 8/25
+42/42 - 3s - 62ms/step - loss: 0.0020 - pr_auc: 0.7406 - val_loss: 0.0021 - val_pr_auc: 0.7801
+Epoch 9/25
+42/42 - 2s - 41ms/step - loss: 0.0019 - pr_auc: 0.7498 - val_loss: 0.0020 - val_pr_auc: 0.7904
+Epoch 10/25
+42/42 - 2s - 40ms/step - loss: 0.0019 - pr_auc: 0.7556 - val_loss: 0.0020 - val_pr_auc: 0.7990
+Epoch 11/25
+42/42 - 2s - 42ms/step - loss: 0.0018 - pr_auc: 0.7731 - val_loss: 0.0019 - val_pr_auc: 0.8079
+Epoch 12/25
+42/42 - 2s - 44ms/step - loss: 0.0017 - pr_auc: 0.7878 - val_loss: 0.0019 - val_pr_auc: 0.8194
+Epoch 13/25
+42/42 - 2s - 43ms/step - loss: 0.0016 - pr_auc: 0.7972 - val_loss: 0.0018 - val_pr_auc: 0.8285
+Epoch 14/25
+42/42 - 2s - 42ms/step - loss: 0.0016 - pr_auc: 0.8109 - val_loss: 0.0018 - val_pr_auc: 0.8392
+Epoch 15/25
+42/42 - 2s - 39ms/step - loss: 0.0015 - pr_auc: 0.8287 - val_loss: 0.0017 - val_pr_auc: 0.8468
+Epoch 16/25
+42/42 - 2s - 42ms/step - loss: 0.0014 - pr_auc: 0.8376 - val_loss: 0.0017 - val_pr_auc: 0.8563
+Epoch 17/25
+42/42 - 2s - 42ms/step - loss: 0.0013 - pr_auc: 0.8525 - val_loss: 0.0016 - val_pr_auc: 0.8581
+Epoch 18/25
+42/42 - 2s - 39ms/step - loss: 0.0013 - pr_auc: 0.8652 - val_loss: 0.0016 - val_pr_auc: 0.8675
+Epoch 19/25
+42/42 - 2s - 38ms/step - loss: 0.0012 - pr_auc: 0.8773 - val_loss: 0.0016 - val_pr_auc: 0.8690
+Epoch 20/25
+42/42 - 2s - 39ms/step - loss: 0.0011 - pr_auc: 0.8896 - val_loss: 0.0016 - val_pr_auc: 0.8729
+Epoch 21/25
+42/42 - 2s - 39ms/step - loss: 0.0010 - pr_auc: 0.9012 - val_loss: 0.0015 - val_pr_auc: 0.8754
+Epoch 22/25
+42/42 - 2s - 38ms/step - loss: 9.5714e-04 - pr_auc: 0.9101 - val_loss: 0.0015 - val_pr_auc: 0.8765
+Epoch 23/25
+42/42 - 2s - 37ms/step - loss: 9.1029e-04 - pr_auc: 0.9169 - val_loss: 0.0015 - val_pr_auc: 0.8817
+Epoch 24/25
+42/42 - 2s - 40ms/step - loss: 8.3736e-04 - pr_auc: 0.9257 - val_loss: 0.0015 - val_pr_auc: 0.8825
+Epoch 25/25
+42/42 - 2s - 41ms/step - loss: 8.0569e-04 - pr_auc: 0.9302 - val_loss: 0.0015 - val_pr_auc: 0.8858
+    val PR-AUC=0.8863  ROC=0.9881  epochs=25  (0.92 min)
+
+--- window=10 seed=42 ---
+Epoch 1/25
+42/42 - 8s - 190ms/step - loss: 0.0236 - pr_auc: 0.0308 - val_loss: 0.0054 - val_pr_auc: 0.3949
+Epoch 2/25
+42/42 - 3s - 67ms/step - loss: 0.0036 - pr_auc: 0.4036 - val_loss: 0.0033 - val_pr_auc: 0.6127
+Epoch 3/25
+42/42 - 3s - 66ms/step - loss: 0.0028 - pr_auc: 0.5791 - val_loss: 0.0027 - val_pr_auc: 0.6910
+Epoch 4/25
+42/42 - 3s - 65ms/step - loss: 0.0024 - pr_auc: 0.6655 - val_loss: 0.0025 - val_pr_auc: 0.7278
+Epoch 5/25
+42/42 - 3s - 68ms/step - loss: 0.0022 - pr_auc: 0.7005 - val_loss: 0.0023 - val_pr_auc: 0.7498
+Epoch 6/25
+42/42 - 5s - 121ms/step - loss: 0.0021 - pr_auc: 0.7197 - val_loss: 0.0022 - val_pr_auc: 0.7685
+Epoch 7/25
+42/42 - 3s - 60ms/step - loss: 0.0020 - pr_auc: 0.7332 - val_loss: 0.0022 - val_pr_auc: 0.7767
+Epoch 8/25
+42/42 - 3s - 65ms/step - loss: 0.0019 - pr_auc: 0.7502 - val_loss: 0.0021 - val_pr_auc: 0.7864
+Epoch 9/25
+42/42 - 3s - 63ms/step - loss: 0.0018 - pr_auc: 0.7752 - val_loss: 0.0021 - val_pr_auc: 0.7949
+Epoch 10/25
+42/42 - 3s - 64ms/step - loss: 0.0018 - pr_auc: 0.7786 - val_loss: 0.0020 - val_pr_auc: 0.7984
+Epoch 11/25
+42/42 - 3s - 61ms/step - loss: 0.0017 - pr_auc: 0.7906 - val_loss: 0.0020 - val_pr_auc: 0.8086
+Epoch 12/25
+42/42 - 3s - 66ms/step - loss: 0.0016 - pr_auc: 0.8060 - val_loss: 0.0019 - val_pr_auc: 0.8153
+Epoch 13/25
+42/42 - 3s - 69ms/step - loss: 0.0015 - pr_auc: 0.8229 - val_loss: 0.0018 - val_pr_auc: 0.8206
+Epoch 14/25
+42/42 - 3s - 64ms/step - loss: 0.0015 - pr_auc: 0.8302 - val_loss: 0.0018 - val_pr_auc: 0.8304
+Epoch 15/25
+42/42 - 3s - 67ms/step - loss: 0.0014 - pr_auc: 0.8392 - val_loss: 0.0017 - val_pr_auc: 0.8360
+Epoch 16/25
+42/42 - 3s - 62ms/step - loss: 0.0013 - pr_auc: 0.8529 - val_loss: 0.0017 - val_pr_auc: 0.8416
+Epoch 17/25
+42/42 - 3s - 63ms/step - loss: 0.0012 - pr_auc: 0.8675 - val_loss: 0.0017 - val_pr_auc: 0.8454
+Epoch 18/25
+42/42 - 3s - 65ms/step - loss: 0.0012 - pr_auc: 0.8701 - val_loss: 0.0017 - val_pr_auc: 0.8462
+Epoch 19/25
+42/42 - 3s - 65ms/step - loss: 0.0011 - pr_auc: 0.8869 - val_loss: 0.0017 - val_pr_auc: 0.8441
+Epoch 20/25
+42/42 - 5s - 129ms/step - loss: 0.0011 - pr_auc: 0.8954 - val_loss: 0.0018 - val_pr_auc: 0.8409
+    val PR-AUC=0.8464  ROC=0.9758  epochs=20  (1.2 min)
+
+--- window=12 seed=42 ---
+Epoch 1/25
+42/42 - 10s - 233ms/step - loss: 0.0275 - pr_auc: 0.0103 - val_loss: 0.0054 - val_pr_auc: 0.3964
+Epoch 2/25
+42/42 - 4s - 100ms/step - loss: 0.0038 - pr_auc: 0.3478 - val_loss: 0.0034 - val_pr_auc: 0.5812
+Epoch 3/25
+42/42 - 4s - 95ms/step - loss: 0.0028 - pr_auc: 0.5794 - val_loss: 0.0028 - val_pr_auc: 0.6862
+Epoch 4/25
+42/42 - 4s - 90ms/step - loss: 0.0024 - pr_auc: 0.6740 - val_loss: 0.0025 - val_pr_auc: 0.7208
+Epoch 5/25
+42/42 - 4s - 92ms/step - loss: 0.0022 - pr_auc: 0.7025 - val_loss: 0.0024 - val_pr_auc: 0.7402
+Epoch 6/25
+42/42 - 4s - 90ms/step - loss: 0.0021 - pr_auc: 0.7216 - val_loss: 0.0023 - val_pr_auc: 0.7552
+Epoch 7/25
+42/42 - 3s - 83ms/step - loss: 0.0020 - pr_auc: 0.7468 - val_loss: 0.0022 - val_pr_auc: 0.7654
+Epoch 8/25
+42/42 - 3s - 83ms/step - loss: 0.0019 - pr_auc: 0.7659 - val_loss: 0.0021 - val_pr_auc: 0.7766
+Epoch 9/25
+42/42 - 3s - 80ms/step - loss: 0.0017 - pr_auc: 0.7886 - val_loss: 0.0021 - val_pr_auc: 0.7821
+Epoch 10/25
+42/42 - 3s - 80ms/step - loss: 0.0017 - pr_auc: 0.7969 - val_loss: 0.0020 - val_pr_auc: 0.7932
+Epoch 11/25
+42/42 - 3s - 79ms/step - loss: 0.0016 - pr_auc: 0.8159 - val_loss: 0.0020 - val_pr_auc: 0.8024
+Epoch 12/25
+42/42 - 3s - 80ms/step - loss: 0.0015 - pr_auc: 0.8253 - val_loss: 0.0018 - val_pr_auc: 0.8165
+Epoch 13/25
+42/42 - 3s - 83ms/step - loss: 0.0014 - pr_auc: 0.8409 - val_loss: 0.0018 - val_pr_auc: 0.8234
+Epoch 14/25
+42/42 - 3s - 81ms/step - loss: 0.0014 - pr_auc: 0.8527 - val_loss: 0.0018 - val_pr_auc: 0.8273
+Epoch 15/25
+42/42 - 4s - 84ms/step - loss: 0.0013 - pr_auc: 0.8661 - val_loss: 0.0017 - val_pr_auc: 0.8351
+Epoch 16/25
+42/42 - 4s - 86ms/step - loss: 0.0012 - pr_auc: 0.8783 - val_loss: 0.0018 - val_pr_auc: 0.8361
+Epoch 17/25
+42/42 - 4s - 85ms/step - loss: 0.0012 - pr_auc: 0.8852 - val_loss: 0.0018 - val_pr_auc: 0.8371
+Epoch 18/25
+42/42 - 4s - 86ms/step - loss: 0.0011 - pr_auc: 0.8946 - val_loss: 0.0019 - val_pr_auc: 0.8284
+Epoch 19/25
+42/42 - 7s - 170ms/step - loss: 9.8014e-04 - pr_auc: 0.9118 - val_loss: 0.0019 - val_pr_auc: 0.8260
+    val PR-AUC=0.8376  ROC=0.9738  epochs=19  (1.42 min)
+
+--- window=15 seed=42 ---
+Epoch 1/25
+42/42 - 33s - 780ms/step - loss: 0.0249 - pr_auc: 0.0121 - val_loss: 0.0045 - val_pr_auc: 0.5214
+Epoch 2/25
+42/42 - 13s - 303ms/step - loss: 0.0039 - pr_auc: 0.3011 - val_loss: 0.0031 - val_pr_auc: 0.6023
+Epoch 3/25
+42/42 - 12s - 278ms/step - loss: 0.0029 - pr_auc: 0.5667 - val_loss: 0.0025 - val_pr_auc: 0.6971
+Epoch 4/25
+42/42 - 12s - 286ms/step - loss: 0.0024 - pr_auc: 0.6508 - val_loss: 0.0022 - val_pr_auc: 0.7427
+Epoch 5/25
+42/42 - 12s - 285ms/step - loss: 0.0022 - pr_auc: 0.6964 - val_loss: 0.0021 - val_pr_auc: 0.7588
+Epoch 6/25
+42/42 - 12s - 285ms/step - loss: 0.0021 - pr_auc: 0.7282 - val_loss: 0.0020 - val_pr_auc: 0.7732
+Epoch 7/25
+42/42 - 12s - 280ms/step - loss: 0.0020 - pr_auc: 0.7453 - val_loss: 0.0019 - val_pr_auc: 0.7811
+Epoch 8/25
+42/42 - 12s - 287ms/step - loss: 0.0019 - pr_auc: 0.7659 - val_loss: 0.0019 - val_pr_auc: 0.7850
+Epoch 9/25
+42/42 - 12s - 277ms/step - loss: 0.0018 - pr_auc: 0.7819 - val_loss: 0.0019 - val_pr_auc: 0.7952
+Epoch 10/25
+42/42 - 12s - 282ms/step - loss: 0.0017 - pr_auc: 0.7911 - val_loss: 0.0019 - val_pr_auc: 0.8003
+Epoch 11/25
+42/42 - 12s - 275ms/step - loss: 0.0016 - pr_auc: 0.8071 - val_loss: 0.0018 - val_pr_auc: 0.8049
+Epoch 12/25
+42/42 - 12s - 281ms/step - loss: 0.0016 - pr_auc: 0.8136 - val_loss: 0.0018 - val_pr_auc: 0.8111
+Epoch 13/25
+42/42 - 11s - 269ms/step - loss: 0.0015 - pr_auc: 0.8318 - val_loss: 0.0018 - val_pr_auc: 0.8177
+Epoch 14/25
+42/42 - 21s - 498ms/step - loss: 0.0014 - pr_auc: 0.8362 - val_loss: 0.0018 - val_pr_auc: 0.8208
+Epoch 15/25
+42/42 - 12s - 277ms/step - loss: 0.0014 - pr_auc: 0.8478 - val_loss: 0.0017 - val_pr_auc: 0.8261
+Epoch 16/25
+42/42 - 12s - 280ms/step - loss: 0.0013 - pr_auc: 0.8579 - val_loss: 0.0018 - val_pr_auc: 0.8274
+Epoch 17/25
+42/42 - 11s - 269ms/step - loss: 0.0012 - pr_auc: 0.8706 - val_loss: 0.0018 - val_pr_auc: 0.8278
+Epoch 18/25
+42/42 - 34s - 800ms/step - loss: 0.0012 - pr_auc: 0.8821 - val_loss: 0.0018 - val_pr_auc: 0.8302
+Epoch 19/25
+42/42 - 23s - 540ms/step - loss: 0.0010 - pr_auc: 0.8972 - val_loss: 0.0018 - val_pr_auc: 0.8305
+Epoch 20/25
+42/42 - 24s - 560ms/step - loss: 9.7595e-04 - pr_auc: 0.9104 - val_loss: 0.0018 - val_pr_auc: 0.8333
+Epoch 21/25
+42/42 - 23s - 537ms/step - loss: 9.1154e-04 - pr_auc: 0.9126 - val_loss: 0.0019 - val_pr_auc: 0.8333
+Epoch 22/25
+42/42 - 15s - 361ms/step - loss: 8.3715e-04 - pr_auc: 0.9259 - val_loss: 0.0019 - val_pr_auc: 0.8279
+Epoch 23/25
+42/42 - 17s - 400ms/step - loss: 7.8632e-04 - pr_auc: 0.9337 - val_loss: 0.0020 - val_pr_auc: 0.8327
+    val PR-AUC=0.8339  ROC=0.978  epochs=23  (6.18 min)
+
+--- window=20 seed=42 ---
+Epoch 1/25
+42/42 - 13s - 316ms/step - loss: 0.0181 - pr_auc: 0.0099 - val_loss: 0.0042 - val_pr_auc: 0.2344
+Epoch 2/25
+42/42 - 7s - 157ms/step - loss: 0.0033 - pr_auc: 0.4478 - val_loss: 0.0026 - val_pr_auc: 0.6787
+Epoch 3/25
+42/42 - 10s - 250ms/step - loss: 0.0024 - pr_auc: 0.6509 - val_loss: 0.0022 - val_pr_auc: 0.7487
+Epoch 4/25
+42/42 - 7s - 156ms/step - loss: 0.0022 - pr_auc: 0.7076 - val_loss: 0.0020 - val_pr_auc: 0.7799
+Epoch 5/25
+42/42 - 7s - 161ms/step - loss: 0.0020 - pr_auc: 0.7414 - val_loss: 0.0019 - val_pr_auc: 0.7974
+Epoch 6/25
+42/42 - 6s - 147ms/step - loss: 0.0019 - pr_auc: 0.7669 - val_loss: 0.0018 - val_pr_auc: 0.8134
+Epoch 7/25
+42/42 - 6s - 147ms/step - loss: 0.0017 - pr_auc: 0.7922 - val_loss: 0.0018 - val_pr_auc: 0.8165
+Epoch 8/25
+42/42 - 7s - 166ms/step - loss: 0.0017 - pr_auc: 0.7970 - val_loss: 0.0017 - val_pr_auc: 0.8216
+Epoch 9/25
+42/42 - 7s - 168ms/step - loss: 0.0016 - pr_auc: 0.8144 - val_loss: 0.0017 - val_pr_auc: 0.8313
+Epoch 10/25
+42/42 - 7s - 165ms/step - loss: 0.0014 - pr_auc: 0.8353 - val_loss: 0.0017 - val_pr_auc: 0.8348
+Epoch 11/25
+42/42 - 7s - 169ms/step - loss: 0.0014 - pr_auc: 0.8400 - val_loss: 0.0017 - val_pr_auc: 0.8406
+Epoch 12/25
+42/42 - 7s - 172ms/step - loss: 0.0013 - pr_auc: 0.8566 - val_loss: 0.0016 - val_pr_auc: 0.8435
+Epoch 13/25
+42/42 - 7s - 169ms/step - loss: 0.0012 - pr_auc: 0.8716 - val_loss: 0.0017 - val_pr_auc: 0.8409
+Epoch 14/25
+42/42 - 7s - 173ms/step - loss: 0.0012 - pr_auc: 0.8813 - val_loss: 0.0017 - val_pr_auc: 0.8414
+    val PR-AUC=0.8436  ROC=0.9748  epochs=14  (1.84 min)
+
+============================================================
+WINDOW SWEEP RESULT  (validation PR-AUC)
+============================================================
+ window   mean  std  n
+      3 0.8963  NaN  1
+      5 0.8863  NaN  1
+     10 0.8464  NaN  1
+     12 0.8376  NaN  1
+     15 0.8339  NaN  1
+     20 0.8436  NaN  1
+
+  best mean PR-AUC : window=3 (0.8963)
+  within 0.01 of best: windows [3, 5]
+  -> prefer the SMALLEST of these (3): simpler model, cheaper inference, same performance.
+
+saved -> c:\Folders\Uni\FYP\module3\results/metrics/phase5a_window_sweep_summary.csv, c:\Folders\Uni\FYP\module3\results/metrics/phase5a_window_sweep_raw.csv, c:\Folders\Uni\FYP\module3\results/figures/phase5a_window_sweep.png
+
+[Done] exited with code=0 in 778.826 seconds
+
+[Running] python -u "c:\Folders\Uni\FYP\module3\experiments\window_size\run_window_experiment.py"
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1784579524.302547    6264 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1784579528.899672    6264 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+windows=[3, 5, 10, 20]  seeds=[42, 7, 123]  nrows=100000
+total runs = 12
+
+--- window=3 seed=42 ---
+WARNING:tensorflow:From C:\Users\asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\backend\tensorflow\core.py:233: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+I0000 00:00:1784579533.806171    6264 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/50
+E0000 00:00:1784579539.207127    6264 util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+42/42 - 7s - 177ms/step - loss: 0.0374 - pr_auc: 0.0091 - val_loss: 0.0080 - val_pr_auc: 0.0561
+Epoch 2/50
+42/42 - 1s - 35ms/step - loss: 0.0045 - pr_auc: 0.2393 - val_loss: 0.0034 - val_pr_auc: 0.5547
+Epoch 3/50
+42/42 - 1s - 32ms/step - loss: 0.0030 - pr_auc: 0.5498 - val_loss: 0.0031 - val_pr_auc: 0.6516
+Epoch 4/50
+42/42 - 3s - 65ms/step - loss: 0.0027 - pr_auc: 0.6099 - val_loss: 0.0030 - val_pr_auc: 0.6772
+Epoch 5/50
+42/42 - 1s - 29ms/step - loss: 0.0026 - pr_auc: 0.6332 - val_loss: 0.0028 - val_pr_auc: 0.6920
+Epoch 6/50
+42/42 - 1s - 30ms/step - loss: 0.0025 - pr_auc: 0.6433 - val_loss: 0.0027 - val_pr_auc: 0.7041
+Epoch 7/50
+42/42 - 1s - 30ms/step - loss: 0.0025 - pr_auc: 0.6534 - val_loss: 0.0026 - val_pr_auc: 0.7183
+Epoch 8/50
+42/42 - 1s - 32ms/step - loss: 0.0024 - pr_auc: 0.6669 - val_loss: 0.0025 - val_pr_auc: 0.7304
+Epoch 9/50
+42/42 - 1s - 29ms/step - loss: 0.0023 - pr_auc: 0.6799 - val_loss: 0.0024 - val_pr_auc: 0.7393
+Epoch 10/50
+42/42 - 1s - 30ms/step - loss: 0.0022 - pr_auc: 0.6956 - val_loss: 0.0024 - val_pr_auc: 0.7481
+Epoch 11/50
+42/42 - 1s - 28ms/step - loss: 0.0022 - pr_auc: 0.6943 - val_loss: 0.0023 - val_pr_auc: 0.7586
+Epoch 12/50
+42/42 - 1s - 34ms/step - loss: 0.0022 - pr_auc: 0.7040 - val_loss: 0.0022 - val_pr_auc: 0.7659
+Epoch 13/50
+42/42 - 1s - 35ms/step - loss: 0.0021 - pr_auc: 0.7177 - val_loss: 0.0021 - val_pr_auc: 0.7755
+Epoch 14/50
+42/42 - 1s - 34ms/step - loss: 0.0020 - pr_auc: 0.7295 - val_loss: 0.0021 - val_pr_auc: 0.7872
+Epoch 15/50
+42/42 - 1s - 33ms/step - loss: 0.0020 - pr_auc: 0.7387 - val_loss: 0.0020 - val_pr_auc: 0.7944
+Epoch 16/50
+42/42 - 1s - 33ms/step - loss: 0.0019 - pr_auc: 0.7519 - val_loss: 0.0020 - val_pr_auc: 0.8048
+Epoch 17/50
+42/42 - 1s - 33ms/step - loss: 0.0018 - pr_auc: 0.7611 - val_loss: 0.0019 - val_pr_auc: 0.8139
+Epoch 18/50
+42/42 - 1s - 35ms/step - loss: 0.0018 - pr_auc: 0.7740 - val_loss: 0.0018 - val_pr_auc: 0.8205
+Epoch 19/50
+42/42 - 1s - 34ms/step - loss: 0.0017 - pr_auc: 0.7781 - val_loss: 0.0018 - val_pr_auc: 0.8285
+Epoch 20/50
+42/42 - 1s - 34ms/step - loss: 0.0017 - pr_auc: 0.7899 - val_loss: 0.0017 - val_pr_auc: 0.8335
+Epoch 21/50
+42/42 - 1s - 30ms/step - loss: 0.0016 - pr_auc: 0.7984 - val_loss: 0.0017 - val_pr_auc: 0.8383
+Epoch 22/50
+42/42 - 1s - 31ms/step - loss: 0.0015 - pr_auc: 0.8144 - val_loss: 0.0017 - val_pr_auc: 0.8450
+Epoch 23/50
+42/42 - 1s - 32ms/step - loss: 0.0014 - pr_auc: 0.8270 - val_loss: 0.0016 - val_pr_auc: 0.8537
+Epoch 24/50
+42/42 - 1s - 33ms/step - loss: 0.0014 - pr_auc: 0.8420 - val_loss: 0.0016 - val_pr_auc: 0.8599
+Epoch 25/50
+42/42 - 1s - 33ms/step - loss: 0.0013 - pr_auc: 0.8570 - val_loss: 0.0015 - val_pr_auc: 0.8637
+Epoch 26/50
+42/42 - 3s - 62ms/step - loss: 0.0012 - pr_auc: 0.8639 - val_loss: 0.0014 - val_pr_auc: 0.8705
+Epoch 27/50
+42/42 - 1s - 33ms/step - loss: 0.0011 - pr_auc: 0.8832 - val_loss: 0.0014 - val_pr_auc: 0.8770
+Epoch 28/50
+42/42 - 1s - 35ms/step - loss: 0.0011 - pr_auc: 0.8830 - val_loss: 0.0013 - val_pr_auc: 0.8832
+Epoch 29/50
+42/42 - 1s - 32ms/step - loss: 0.0010 - pr_auc: 0.8990 - val_loss: 0.0013 - val_pr_auc: 0.8884
+Epoch 30/50
+42/42 - 1s - 34ms/step - loss: 9.7659e-04 - pr_auc: 0.9044 - val_loss: 0.0013 - val_pr_auc: 0.8910
+Epoch 31/50
+42/42 - 1s - 32ms/step - loss: 9.2066e-04 - pr_auc: 0.9105 - val_loss: 0.0013 - val_pr_auc: 0.8957
+Epoch 32/50
+42/42 - 1s - 34ms/step - loss: 8.7216e-04 - pr_auc: 0.9179 - val_loss: 0.0013 - val_pr_auc: 0.8992
+Epoch 33/50
+42/42 - 1s - 33ms/step - loss: 8.3083e-04 - pr_auc: 0.9234 - val_loss: 0.0013 - val_pr_auc: 0.9022
+Epoch 34/50
+42/42 - 1s - 33ms/step - loss: 7.9171e-04 - pr_auc: 0.9288 - val_loss: 0.0012 - val_pr_auc: 0.9054
+Epoch 35/50
+42/42 - 1s - 28ms/step - loss: 7.6537e-04 - pr_auc: 0.9336 - val_loss: 0.0012 - val_pr_auc: 0.9068
+Epoch 36/50
+42/42 - 1s - 30ms/step - loss: 7.3920e-04 - pr_auc: 0.9367 - val_loss: 0.0012 - val_pr_auc: 0.9107
+Epoch 37/50
+42/42 - 1s - 30ms/step - loss: 7.1198e-04 - pr_auc: 0.9392 - val_loss: 0.0012 - val_pr_auc: 0.9113
+Epoch 38/50
+42/42 - 1s - 34ms/step - loss: 6.7908e-04 - pr_auc: 0.9444 - val_loss: 0.0011 - val_pr_auc: 0.9174
+Epoch 39/50
+42/42 - 1s - 32ms/step - loss: 6.5649e-04 - pr_auc: 0.9469 - val_loss: 0.0012 - val_pr_auc: 0.9186
+Epoch 40/50
+42/42 - 1s - 32ms/step - loss: 6.2333e-04 - pr_auc: 0.9500 - val_loss: 0.0011 - val_pr_auc: 0.9231
+Epoch 41/50
+42/42 - 1s - 31ms/step - loss: 5.9985e-04 - pr_auc: 0.9542 - val_loss: 0.0012 - val_pr_auc: 0.9233
+Epoch 42/50
+42/42 - 1s - 31ms/step - loss: 5.6047e-04 - pr_auc: 0.9582 - val_loss: 0.0011 - val_pr_auc: 0.9277
+Epoch 43/50
+42/42 - 1s - 32ms/step - loss: 5.7545e-04 - pr_auc: 0.9562 - val_loss: 0.0011 - val_pr_auc: 0.9305
+Epoch 44/50
+42/42 - 1s - 29ms/step - loss: 5.1928e-04 - pr_auc: 0.9629 - val_loss: 0.0011 - val_pr_auc: 0.9336
+Epoch 45/50
+42/42 - 1s - 29ms/step - loss: 4.9804e-04 - pr_auc: 0.9663 - val_loss: 0.0010 - val_pr_auc: 0.9414
+Epoch 46/50
+42/42 - 1s - 29ms/step - loss: 4.8588e-04 - pr_auc: 0.9672 - val_loss: 9.6751e-04 - val_pr_auc: 0.9438
+Epoch 47/50
+42/42 - 1s - 31ms/step - loss: 4.3681e-04 - pr_auc: 0.9731 - val_loss: 0.0010 - val_pr_auc: 0.9436
+Epoch 48/50
+42/42 - 1s - 33ms/step - loss: 4.1708e-04 - pr_auc: 0.9746 - val_loss: 9.8343e-04 - val_pr_auc: 0.9489
+Epoch 49/50
+42/42 - 3s - 62ms/step - loss: 4.0309e-04 - pr_auc: 0.9766 - val_loss: 9.2241e-04 - val_pr_auc: 0.9502
+Epoch 50/50
+42/42 - 1s - 33ms/step - loss: 3.8616e-04 - pr_auc: 0.9777 - val_loss: 0.0010 - val_pr_auc: 0.9479
+    val PR-AUC=0.9504  ROC=0.9982  epochs=50  (1.38 min)
+
+--- window=3 seed=7 ---
+Epoch 1/50
+42/42 - 7s - 174ms/step - loss: 0.0441 - pr_auc: 0.0104 - val_loss: 0.0063 - val_pr_auc: 0.1651
+Epoch 2/50
+42/42 - 1s - 34ms/step - loss: 0.0041 - pr_auc: 0.2714 - val_loss: 0.0031 - val_pr_auc: 0.6027
+Epoch 3/50
+42/42 - 1s - 35ms/step - loss: 0.0029 - pr_auc: 0.5567 - val_loss: 0.0028 - val_pr_auc: 0.6625
+Epoch 4/50
+42/42 - 1s - 33ms/step - loss: 0.0027 - pr_auc: 0.6266 - val_loss: 0.0027 - val_pr_auc: 0.6851
+Epoch 5/50
+42/42 - 3s - 63ms/step - loss: 0.0026 - pr_auc: 0.6343 - val_loss: 0.0025 - val_pr_auc: 0.7016
+Epoch 6/50
+42/42 - 1s - 31ms/step - loss: 0.0025 - pr_auc: 0.6493 - val_loss: 0.0024 - val_pr_auc: 0.7137
+Epoch 7/50
+42/42 - 1s - 32ms/step - loss: 0.0024 - pr_auc: 0.6643 - val_loss: 0.0023 - val_pr_auc: 0.7267
+Epoch 8/50
+42/42 - 1s - 33ms/step - loss: 0.0023 - pr_auc: 0.6820 - val_loss: 0.0023 - val_pr_auc: 0.7339
+Epoch 9/50
+42/42 - 1s - 29ms/step - loss: 0.0023 - pr_auc: 0.6807 - val_loss: 0.0022 - val_pr_auc: 0.7419
+Epoch 10/50
+42/42 - 1s - 32ms/step - loss: 0.0022 - pr_auc: 0.6963 - val_loss: 0.0022 - val_pr_auc: 0.7500
+Epoch 11/50
+42/42 - 1s - 30ms/step - loss: 0.0022 - pr_auc: 0.7043 - val_loss: 0.0021 - val_pr_auc: 0.7577
+Epoch 12/50
+42/42 - 1s - 33ms/step - loss: 0.0022 - pr_auc: 0.7123 - val_loss: 0.0021 - val_pr_auc: 0.7682
+Epoch 13/50
+42/42 - 1s - 33ms/step - loss: 0.0021 - pr_auc: 0.7216 - val_loss: 0.0020 - val_pr_auc: 0.7781
+Epoch 14/50
+42/42 - 3s - 62ms/step - loss: 0.0020 - pr_auc: 0.7306 - val_loss: 0.0019 - val_pr_auc: 0.7909
+Epoch 15/50
+42/42 - 1s - 34ms/step - loss: 0.0020 - pr_auc: 0.7413 - val_loss: 0.0019 - val_pr_auc: 0.8031
+Epoch 16/50
+42/42 - 2s - 37ms/step - loss: 0.0019 - pr_auc: 0.7499 - val_loss: 0.0018 - val_pr_auc: 0.8154
+Epoch 17/50
+42/42 - 1s - 34ms/step - loss: 0.0018 - pr_auc: 0.7650 - val_loss: 0.0017 - val_pr_auc: 0.8251
+Epoch 18/50
+42/42 - 1s - 32ms/step - loss: 0.0017 - pr_auc: 0.7820 - val_loss: 0.0017 - val_pr_auc: 0.8343
+Epoch 19/50
+42/42 - 3s - 66ms/step - loss: 0.0016 - pr_auc: 0.7958 - val_loss: 0.0016 - val_pr_auc: 0.8434
+Epoch 20/50
+42/42 - 1s - 34ms/step - loss: 0.0016 - pr_auc: 0.8001 - val_loss: 0.0016 - val_pr_auc: 0.8502
+Epoch 21/50
+42/42 - 1s - 34ms/step - loss: 0.0015 - pr_auc: 0.8210 - val_loss: 0.0015 - val_pr_auc: 0.8576
+Epoch 22/50
+42/42 - 1s - 34ms/step - loss: 0.0014 - pr_auc: 0.8361 - val_loss: 0.0015 - val_pr_auc: 0.8661
+Epoch 23/50
+42/42 - 3s - 61ms/step - loss: 0.0013 - pr_auc: 0.8464 - val_loss: 0.0014 - val_pr_auc: 0.8749
+Epoch 24/50
+42/42 - 1s - 33ms/step - loss: 0.0013 - pr_auc: 0.8576 - val_loss: 0.0013 - val_pr_auc: 0.8838
+Epoch 25/50
+42/42 - 1s - 35ms/step - loss: 0.0012 - pr_auc: 0.8686 - val_loss: 0.0013 - val_pr_auc: 0.8913
+Epoch 26/50
+42/42 - 3s - 64ms/step - loss: 0.0011 - pr_auc: 0.8822 - val_loss: 0.0012 - val_pr_auc: 0.8965
+Epoch 27/50
+42/42 - 1s - 33ms/step - loss: 0.0010 - pr_auc: 0.8958 - val_loss: 0.0012 - val_pr_auc: 0.9022
+Epoch 28/50
+42/42 - 1s - 32ms/step - loss: 9.8441e-04 - pr_auc: 0.9026 - val_loss: 0.0012 - val_pr_auc: 0.9049
+Epoch 29/50
+42/42 - 1s - 32ms/step - loss: 9.5237e-04 - pr_auc: 0.9085 - val_loss: 0.0011 - val_pr_auc: 0.9120
+Epoch 30/50
+42/42 - 1s - 31ms/step - loss: 8.8410e-04 - pr_auc: 0.9193 - val_loss: 0.0012 - val_pr_auc: 0.9128
+Epoch 31/50
+42/42 - 1s - 29ms/step - loss: 8.1888e-04 - pr_auc: 0.9282 - val_loss: 0.0010 - val_pr_auc: 0.9208
+Epoch 32/50
+42/42 - 1s - 30ms/step - loss: 7.8472e-04 - pr_auc: 0.9316 - val_loss: 0.0010 - val_pr_auc: 0.9224
+Epoch 33/50
+42/42 - 1s - 32ms/step - loss: 7.3496e-04 - pr_auc: 0.9389 - val_loss: 0.0010 - val_pr_auc: 0.9264
+Epoch 34/50
+42/42 - 1s - 32ms/step - loss: 6.8808e-04 - pr_auc: 0.9455 - val_loss: 0.0010 - val_pr_auc: 0.9270
+Epoch 35/50
+42/42 - 1s - 31ms/step - loss: 6.9316e-04 - pr_auc: 0.9454 - val_loss: 9.7215e-04 - val_pr_auc: 0.9303
+Epoch 36/50
+42/42 - 1s - 31ms/step - loss: 6.5738e-04 - pr_auc: 0.9500 - val_loss: 9.5411e-04 - val_pr_auc: 0.9329
+Epoch 37/50
+42/42 - 1s - 33ms/step - loss: 6.2172e-04 - pr_auc: 0.9532 - val_loss: 9.9208e-04 - val_pr_auc: 0.9348
+Epoch 38/50
+42/42 - 3s - 63ms/step - loss: 6.0279e-04 - pr_auc: 0.9558 - val_loss: 9.5205e-04 - val_pr_auc: 0.9366
+Epoch 39/50
+42/42 - 1s - 31ms/step - loss: 5.9164e-04 - pr_auc: 0.9572 - val_loss: 8.7951e-04 - val_pr_auc: 0.9410
+Epoch 40/50
+42/42 - 1s - 31ms/step - loss: 5.5536e-04 - pr_auc: 0.9608 - val_loss: 9.2087e-04 - val_pr_auc: 0.9423
+Epoch 41/50
+42/42 - 1s - 29ms/step - loss: 5.4469e-04 - pr_auc: 0.9628 - val_loss: 9.1203e-04 - val_pr_auc: 0.9401
+Epoch 42/50
+42/42 - 2s - 36ms/step - loss: 5.2461e-04 - pr_auc: 0.9655 - val_loss: 8.7835e-04 - val_pr_auc: 0.9465
+Epoch 43/50
+42/42 - 1s - 31ms/step - loss: 5.0457e-04 - pr_auc: 0.9673 - val_loss: 8.5975e-04 - val_pr_auc: 0.9467
+Epoch 44/50
+42/42 - 1s - 35ms/step - loss: 4.7443e-04 - pr_auc: 0.9700 - val_loss: 8.5394e-04 - val_pr_auc: 0.9476
+Epoch 45/50
+42/42 - 1s - 34ms/step - loss: 4.8004e-04 - pr_auc: 0.9689 - val_loss: 8.4953e-04 - val_pr_auc: 0.9475
+Epoch 46/50
+42/42 - 1s - 33ms/step - loss: 4.5355e-04 - pr_auc: 0.9726 - val_loss: 8.2836e-04 - val_pr_auc: 0.9501
+Epoch 47/50
+42/42 - 1s - 34ms/step - loss: 4.1512e-04 - pr_auc: 0.9769 - val_loss: 8.8945e-04 - val_pr_auc: 0.9485
+Epoch 48/50
+42/42 - 1s - 33ms/step - loss: 4.0790e-04 - pr_auc: 0.9771 - val_loss: 8.2161e-04 - val_pr_auc: 0.9525
+Epoch 49/50
+42/42 - 1s - 32ms/step - loss: 4.1679e-04 - pr_auc: 0.9765 - val_loss: 7.9643e-04 - val_pr_auc: 0.9557
+Epoch 50/50
+42/42 - 1s - 34ms/step - loss: 3.8229e-04 - pr_auc: 0.9795 - val_loss: 8.0950e-04 - val_pr_auc: 0.9561
+    val PR-AUC=0.9564  ROC=0.9985  epochs=50  (1.44 min)
+
+--- window=3 seed=123 ---
+Epoch 1/50
+42/42 - 7s - 178ms/step - loss: 0.0520 - pr_auc: 0.0082 - val_loss: 0.0085 - val_pr_auc: 0.0460
+Epoch 2/50
+42/42 - 2s - 52ms/step - loss: 0.0046 - pr_auc: 0.1874 - val_loss: 0.0033 - val_pr_auc: 0.5910
+Epoch 3/50
+42/42 - 2s - 56ms/step - loss: 0.0030 - pr_auc: 0.5424 - val_loss: 0.0029 - val_pr_auc: 0.6780
+Epoch 4/50
+42/42 - 3s - 69ms/step - loss: 0.0027 - pr_auc: 0.6078 - val_loss: 0.0027 - val_pr_auc: 0.7009
+Epoch 5/50
+42/42 - 2s - 58ms/step - loss: 0.0026 - pr_auc: 0.6365 - val_loss: 0.0025 - val_pr_auc: 0.7136
+Epoch 6/50
+42/42 - 3s - 61ms/step - loss: 0.0025 - pr_auc: 0.6493 - val_loss: 0.0025 - val_pr_auc: 0.7240
+Epoch 7/50
+42/42 - 2s - 56ms/step - loss: 0.0024 - pr_auc: 0.6696 - val_loss: 0.0024 - val_pr_auc: 0.7358
+Epoch 8/50
+42/42 - 2s - 59ms/step - loss: 0.0023 - pr_auc: 0.6730 - val_loss: 0.0023 - val_pr_auc: 0.7390
+Epoch 9/50
+42/42 - 2s - 55ms/step - loss: 0.0022 - pr_auc: 0.6961 - val_loss: 0.0022 - val_pr_auc: 0.7467
+Epoch 10/50
+42/42 - 3s - 69ms/step - loss: 0.0022 - pr_auc: 0.7050 - val_loss: 0.0022 - val_pr_auc: 0.7554
+Epoch 11/50
+42/42 - 3s - 60ms/step - loss: 0.0021 - pr_auc: 0.7116 - val_loss: 0.0021 - val_pr_auc: 0.7631
+Epoch 12/50
+42/42 - 2s - 59ms/step - loss: 0.0021 - pr_auc: 0.7237 - val_loss: 0.0021 - val_pr_auc: 0.7712
+Epoch 13/50
+42/42 - 2s - 58ms/step - loss: 0.0020 - pr_auc: 0.7355 - val_loss: 0.0020 - val_pr_auc: 0.7811
+Epoch 14/50
+42/42 - 3s - 60ms/step - loss: 0.0019 - pr_auc: 0.7439 - val_loss: 0.0019 - val_pr_auc: 0.7903
+Epoch 15/50
+42/42 - 3s - 62ms/step - loss: 0.0019 - pr_auc: 0.7541 - val_loss: 0.0019 - val_pr_auc: 0.8018
+Epoch 16/50
+42/42 - 3s - 60ms/step - loss: 0.0018 - pr_auc: 0.7696 - val_loss: 0.0018 - val_pr_auc: 0.8132
+Epoch 17/50
+42/42 - 2s - 57ms/step - loss: 0.0017 - pr_auc: 0.7824 - val_loss: 0.0017 - val_pr_auc: 0.8252
+Epoch 18/50
+42/42 - 3s - 65ms/step - loss: 0.0016 - pr_auc: 0.8031 - val_loss: 0.0017 - val_pr_auc: 0.8322
+Epoch 19/50
+42/42 - 2s - 58ms/step - loss: 0.0015 - pr_auc: 0.8171 - val_loss: 0.0016 - val_pr_auc: 0.8428
+Epoch 20/50
+42/42 - 2s - 59ms/step - loss: 0.0014 - pr_auc: 0.8357 - val_loss: 0.0015 - val_pr_auc: 0.8483
+Epoch 21/50
+42/42 - 2s - 55ms/step - loss: 0.0013 - pr_auc: 0.8510 - val_loss: 0.0015 - val_pr_auc: 0.8561
+Epoch 22/50
+42/42 - 3s - 68ms/step - loss: 0.0013 - pr_auc: 0.8603 - val_loss: 0.0015 - val_pr_auc: 0.8622
+Epoch 23/50
+42/42 - 2s - 59ms/step - loss: 0.0012 - pr_auc: 0.8706 - val_loss: 0.0014 - val_pr_auc: 0.8669
+Epoch 24/50
+42/42 - 3s - 61ms/step - loss: 0.0011 - pr_auc: 0.8798 - val_loss: 0.0014 - val_pr_auc: 0.8705
+Epoch 25/50
+42/42 - 3s - 61ms/step - loss: 0.0011 - pr_auc: 0.8861 - val_loss: 0.0014 - val_pr_auc: 0.8771
+Epoch 26/50
+42/42 - 3s - 65ms/step - loss: 0.0010 - pr_auc: 0.8958 - val_loss: 0.0013 - val_pr_auc: 0.8812
+Epoch 27/50
+42/42 - 2s - 57ms/step - loss: 9.6334e-04 - pr_auc: 0.9064 - val_loss: 0.0013 - val_pr_auc: 0.8848
+Epoch 28/50
+42/42 - 2s - 58ms/step - loss: 9.4418e-04 - pr_auc: 0.9091 - val_loss: 0.0013 - val_pr_auc: 0.8882
+Epoch 29/50
+42/42 - 2s - 55ms/step - loss: 8.7480e-04 - pr_auc: 0.9194 - val_loss: 0.0013 - val_pr_auc: 0.8897
+Epoch 30/50
+42/42 - 3s - 64ms/step - loss: 8.5189e-04 - pr_auc: 0.9222 - val_loss: 0.0012 - val_pr_auc: 0.8978
+Epoch 31/50
+42/42 - 2s - 56ms/step - loss: 8.0711e-04 - pr_auc: 0.9290 - val_loss: 0.0011 - val_pr_auc: 0.9074
+Epoch 32/50
+42/42 - 2s - 58ms/step - loss: 7.6500e-04 - pr_auc: 0.9348 - val_loss: 0.0012 - val_pr_auc: 0.9067
+Epoch 33/50
+42/42 - 3s - 60ms/step - loss: 7.4621e-04 - pr_auc: 0.9378 - val_loss: 0.0011 - val_pr_auc: 0.9120
+Epoch 34/50
+42/42 - 2s - 59ms/step - loss: 6.8038e-04 - pr_auc: 0.9452 - val_loss: 0.0011 - val_pr_auc: 0.9170
+Epoch 35/50
+42/42 - 2s - 58ms/step - loss: 6.6634e-04 - pr_auc: 0.9474 - val_loss: 0.0011 - val_pr_auc: 0.9163
+Epoch 36/50
+42/42 - 2s - 58ms/step - loss: 6.1870e-04 - pr_auc: 0.9532 - val_loss: 0.0010 - val_pr_auc: 0.9213
+Epoch 37/50
+42/42 - 2s - 56ms/step - loss: 6.1379e-04 - pr_auc: 0.9534 - val_loss: 0.0010 - val_pr_auc: 0.9226
+Epoch 38/50
+42/42 - 3s - 60ms/step - loss: 5.7211e-04 - pr_auc: 0.9586 - val_loss: 0.0010 - val_pr_auc: 0.9288
+Epoch 39/50
+42/42 - 2s - 54ms/step - loss: 5.2974e-04 - pr_auc: 0.9636 - val_loss: 9.6052e-04 - val_pr_auc: 0.9345
+Epoch 40/50
+42/42 - 3s - 63ms/step - loss: 5.1878e-04 - pr_auc: 0.9651 - val_loss: 9.8059e-04 - val_pr_auc: 0.9344
+Epoch 41/50
+42/42 - 2s - 54ms/step - loss: 5.0598e-04 - pr_auc: 0.9657 - val_loss: 0.0010 - val_pr_auc: 0.9333
+    val PR-AUC=0.9349  ROC=0.9971  epochs=41  (1.86 min)
+
+--- window=5 seed=42 ---
+Epoch 1/50
+42/42 - 8s - 188ms/step - loss: 0.0270 - pr_auc: 0.0134 - val_loss: 0.0077 - val_pr_auc: 0.2313
+Epoch 2/50
+42/42 - 4s - 99ms/step - loss: 0.0036 - pr_auc: 0.4580 - val_loss: 0.0041 - val_pr_auc: 0.5898
+Epoch 3/50
+42/42 - 2s - 47ms/step - loss: 0.0028 - pr_auc: 0.6359 - val_loss: 0.0036 - val_pr_auc: 0.6587
+Epoch 4/50
+42/42 - 2s - 50ms/step - loss: 0.0026 - pr_auc: 0.6607 - val_loss: 0.0032 - val_pr_auc: 0.6886
+Epoch 5/50
+42/42 - 2s - 47ms/step - loss: 0.0024 - pr_auc: 0.6867 - val_loss: 0.0030 - val_pr_auc: 0.7106
+Epoch 6/50
+42/42 - 2s - 45ms/step - loss: 0.0023 - pr_auc: 0.7026 - val_loss: 0.0028 - val_pr_auc: 0.7306
+Epoch 7/50
+42/42 - 3s - 61ms/step - loss: 0.0022 - pr_auc: 0.7249 - val_loss: 0.0026 - val_pr_auc: 0.7433
+Epoch 8/50
+42/42 - 2s - 40ms/step - loss: 0.0021 - pr_auc: 0.7279 - val_loss: 0.0025 - val_pr_auc: 0.7573
+Epoch 9/50
+42/42 - 2s - 41ms/step - loss: 0.0021 - pr_auc: 0.7348 - val_loss: 0.0023 - val_pr_auc: 0.7685
+Epoch 10/50
+42/42 - 2s - 42ms/step - loss: 0.0020 - pr_auc: 0.7450 - val_loss: 0.0023 - val_pr_auc: 0.7798
+Epoch 11/50
+42/42 - 2s - 42ms/step - loss: 0.0020 - pr_auc: 0.7504 - val_loss: 0.0022 - val_pr_auc: 0.7934
+Epoch 12/50
+42/42 - 2s - 46ms/step - loss: 0.0018 - pr_auc: 0.7742 - val_loss: 0.0021 - val_pr_auc: 0.8046
+Epoch 13/50
+42/42 - 2s - 46ms/step - loss: 0.0017 - pr_auc: 0.7841 - val_loss: 0.0020 - val_pr_auc: 0.8188
+Epoch 14/50
+42/42 - 2s - 43ms/step - loss: 0.0017 - pr_auc: 0.7927 - val_loss: 0.0019 - val_pr_auc: 0.8276
+Epoch 15/50
+42/42 - 2s - 42ms/step - loss: 0.0016 - pr_auc: 0.8077 - val_loss: 0.0018 - val_pr_auc: 0.8346
+Epoch 16/50
+42/42 - 2s - 42ms/step - loss: 0.0015 - pr_auc: 0.8196 - val_loss: 0.0018 - val_pr_auc: 0.8425
+Epoch 17/50
+42/42 - 3s - 66ms/step - loss: 0.0015 - pr_auc: 0.8300 - val_loss: 0.0017 - val_pr_auc: 0.8459
+Epoch 18/50
+42/42 - 2s - 43ms/step - loss: 0.0014 - pr_auc: 0.8384 - val_loss: 0.0017 - val_pr_auc: 0.8527
+Epoch 19/50
+42/42 - 2s - 44ms/step - loss: 0.0013 - pr_auc: 0.8533 - val_loss: 0.0016 - val_pr_auc: 0.8564
+Epoch 20/50
+42/42 - 2s - 41ms/step - loss: 0.0013 - pr_auc: 0.8619 - val_loss: 0.0016 - val_pr_auc: 0.8641
+Epoch 21/50
+42/42 - 2s - 44ms/step - loss: 0.0012 - pr_auc: 0.8726 - val_loss: 0.0016 - val_pr_auc: 0.8681
+Epoch 22/50
+42/42 - 2s - 45ms/step - loss: 0.0011 - pr_auc: 0.8905 - val_loss: 0.0016 - val_pr_auc: 0.8712
+Epoch 23/50
+42/42 - 3s - 65ms/step - loss: 0.0011 - pr_auc: 0.8966 - val_loss: 0.0015 - val_pr_auc: 0.8760
+Epoch 24/50
+42/42 - 2s - 45ms/step - loss: 9.5873e-04 - pr_auc: 0.9072 - val_loss: 0.0015 - val_pr_auc: 0.8797
+Epoch 25/50
+42/42 - 2s - 47ms/step - loss: 9.3750e-04 - pr_auc: 0.9136 - val_loss: 0.0015 - val_pr_auc: 0.8810
+Epoch 26/50
+42/42 - 2s - 46ms/step - loss: 9.0897e-04 - pr_auc: 0.9163 - val_loss: 0.0015 - val_pr_auc: 0.8828
+Epoch 27/50
+42/42 - 2s - 45ms/step - loss: 8.3670e-04 - pr_auc: 0.9285 - val_loss: 0.0014 - val_pr_auc: 0.8892
+Epoch 28/50
+42/42 - 3s - 66ms/step - loss: 8.0286e-04 - pr_auc: 0.9332 - val_loss: 0.0014 - val_pr_auc: 0.8877
+Epoch 29/50
+42/42 - 2s - 44ms/step - loss: 7.5836e-04 - pr_auc: 0.9368 - val_loss: 0.0014 - val_pr_auc: 0.8935
+Epoch 30/50
+42/42 - 2s - 45ms/step - loss: 7.1109e-04 - pr_auc: 0.9424 - val_loss: 0.0015 - val_pr_auc: 0.8922
+Epoch 31/50
+42/42 - 2s - 47ms/step - loss: 7.0532e-04 - pr_auc: 0.9449 - val_loss: 0.0014 - val_pr_auc: 0.8942
+Epoch 32/50
+42/42 - 2s - 47ms/step - loss: 6.5384e-04 - pr_auc: 0.9506 - val_loss: 0.0014 - val_pr_auc: 0.8999
+Epoch 33/50
+42/42 - 3s - 63ms/step - loss: 6.2900e-04 - pr_auc: 0.9516 - val_loss: 0.0013 - val_pr_auc: 0.9041
+Epoch 34/50
+42/42 - 3s - 64ms/step - loss: 5.9691e-04 - pr_auc: 0.9569 - val_loss: 0.0013 - val_pr_auc: 0.9055
+Epoch 35/50
+42/42 - 2s - 44ms/step - loss: 5.6411e-04 - pr_auc: 0.9605 - val_loss: 0.0014 - val_pr_auc: 0.9007
+Epoch 36/50
+42/42 - 2s - 40ms/step - loss: 5.3172e-04 - pr_auc: 0.9639 - val_loss: 0.0013 - val_pr_auc: 0.9116
+Epoch 37/50
+42/42 - 2s - 46ms/step - loss: 4.8168e-04 - pr_auc: 0.9693 - val_loss: 0.0013 - val_pr_auc: 0.9096
+Epoch 38/50
+42/42 - 2s - 43ms/step - loss: 4.9461e-04 - pr_auc: 0.9671 - val_loss: 0.0014 - val_pr_auc: 0.9099
+    val PR-AUC=0.9118  ROC=0.9946  epochs=38  (1.47 min)
+
+--- window=5 seed=7 ---
+Epoch 1/50
+42/42 - 10s - 245ms/step - loss: 0.0206 - pr_auc: 0.0161 - val_loss: 0.0052 - val_pr_auc: 0.4446
+Epoch 2/50
+42/42 - 3s - 81ms/step - loss: 0.0032 - pr_auc: 0.4927 - val_loss: 0.0033 - val_pr_auc: 0.6344
+Epoch 3/50
+42/42 - 3s - 80ms/step - loss: 0.0027 - pr_auc: 0.6131 - val_loss: 0.0028 - val_pr_auc: 0.6795
+Epoch 4/50
+42/42 - 3s - 78ms/step - loss: 0.0024 - pr_auc: 0.6664 - val_loss: 0.0025 - val_pr_auc: 0.7078
+Epoch 5/50
+42/42 - 3s - 77ms/step - loss: 0.0023 - pr_auc: 0.6925 - val_loss: 0.0024 - val_pr_auc: 0.7288
+Epoch 6/50
+42/42 - 3s - 83ms/step - loss: 0.0022 - pr_auc: 0.6977 - val_loss: 0.0023 - val_pr_auc: 0.7412
+Epoch 7/50
+42/42 - 3s - 81ms/step - loss: 0.0021 - pr_auc: 0.7160 - val_loss: 0.0022 - val_pr_auc: 0.7546
+Epoch 8/50
+42/42 - 3s - 82ms/step - loss: 0.0020 - pr_auc: 0.7280 - val_loss: 0.0021 - val_pr_auc: 0.7656
+Epoch 9/50
+42/42 - 3s - 78ms/step - loss: 0.0019 - pr_auc: 0.7448 - val_loss: 0.0021 - val_pr_auc: 0.7754
+Epoch 10/50
+42/42 - 6s - 132ms/step - loss: 0.0019 - pr_auc: 0.7506 - val_loss: 0.0020 - val_pr_auc: 0.7875
+Epoch 11/50
+42/42 - 3s - 77ms/step - loss: 0.0019 - pr_auc: 0.7553 - val_loss: 0.0019 - val_pr_auc: 0.7977
+Epoch 12/50
+42/42 - 4s - 83ms/step - loss: 0.0018 - pr_auc: 0.7771 - val_loss: 0.0019 - val_pr_auc: 0.8093
+Epoch 13/50
+42/42 - 3s - 81ms/step - loss: 0.0017 - pr_auc: 0.7870 - val_loss: 0.0018 - val_pr_auc: 0.8197
+Epoch 14/50
+42/42 - 4s - 88ms/step - loss: 0.0017 - pr_auc: 0.7899 - val_loss: 0.0017 - val_pr_auc: 0.8317
+Epoch 15/50
+42/42 - 3s - 76ms/step - loss: 0.0016 - pr_auc: 0.8098 - val_loss: 0.0017 - val_pr_auc: 0.8397
+Epoch 16/50
+42/42 - 3s - 83ms/step - loss: 0.0015 - pr_auc: 0.8276 - val_loss: 0.0016 - val_pr_auc: 0.8497
+Epoch 17/50
+42/42 - 5s - 121ms/step - loss: 0.0014 - pr_auc: 0.8389 - val_loss: 0.0016 - val_pr_auc: 0.8556
+Epoch 18/50
+42/42 - 4s - 84ms/step - loss: 0.0014 - pr_auc: 0.8502 - val_loss: 0.0016 - val_pr_auc: 0.8611
+Epoch 19/50
+42/42 - 3s - 81ms/step - loss: 0.0013 - pr_auc: 0.8583 - val_loss: 0.0015 - val_pr_auc: 0.8644
+Epoch 20/50
+42/42 - 3s - 82ms/step - loss: 0.0012 - pr_auc: 0.8732 - val_loss: 0.0015 - val_pr_auc: 0.8660
+Epoch 21/50
+42/42 - 3s - 80ms/step - loss: 0.0012 - pr_auc: 0.8802 - val_loss: 0.0015 - val_pr_auc: 0.8691
+Epoch 22/50
+42/42 - 3s - 81ms/step - loss: 0.0011 - pr_auc: 0.8967 - val_loss: 0.0016 - val_pr_auc: 0.8681
+Epoch 23/50
+42/42 - 3s - 80ms/step - loss: 9.8363e-04 - pr_auc: 0.9060 - val_loss: 0.0015 - val_pr_auc: 0.8666
+    val PR-AUC=0.8693  ROC=0.9856  epochs=23  (1.58 min)
+
+--- window=5 seed=123 ---
+Epoch 1/50
+42/42 - 9s - 204ms/step - loss: 0.0301 - pr_auc: 0.0138 - val_loss: 0.0065 - val_pr_auc: 0.3069
+Epoch 2/50
+42/42 - 2s - 56ms/step - loss: 0.0042 - pr_auc: 0.3392 - val_loss: 0.0032 - val_pr_auc: 0.5791
+Epoch 3/50
+42/42 - 2s - 58ms/step - loss: 0.0029 - pr_auc: 0.6002 - val_loss: 0.0027 - val_pr_auc: 0.6874
+Epoch 4/50
+42/42 - 2s - 59ms/step - loss: 0.0026 - pr_auc: 0.6647 - val_loss: 0.0025 - val_pr_auc: 0.7259
+Epoch 5/50
+42/42 - 2s - 57ms/step - loss: 0.0025 - pr_auc: 0.6723 - val_loss: 0.0023 - val_pr_auc: 0.7384
+Epoch 6/50
+42/42 - 2s - 57ms/step - loss: 0.0023 - pr_auc: 0.6980 - val_loss: 0.0022 - val_pr_auc: 0.7486
+Epoch 7/50
+42/42 - 2s - 56ms/step - loss: 0.0023 - pr_auc: 0.7040 - val_loss: 0.0022 - val_pr_auc: 0.7617
+Epoch 8/50
+42/42 - 3s - 61ms/step - loss: 0.0021 - pr_auc: 0.7182 - val_loss: 0.0021 - val_pr_auc: 0.7678
+Epoch 9/50
+42/42 - 2s - 57ms/step - loss: 0.0021 - pr_auc: 0.7252 - val_loss: 0.0021 - val_pr_auc: 0.7760
+Epoch 10/50
+42/42 - 3s - 65ms/step - loss: 0.0020 - pr_auc: 0.7436 - val_loss: 0.0020 - val_pr_auc: 0.7839
+Epoch 11/50
+42/42 - 2s - 56ms/step - loss: 0.0019 - pr_auc: 0.7520 - val_loss: 0.0019 - val_pr_auc: 0.7955
+Epoch 12/50
+42/42 - 2s - 56ms/step - loss: 0.0018 - pr_auc: 0.7684 - val_loss: 0.0019 - val_pr_auc: 0.8049
+Epoch 13/50
+42/42 - 2s - 52ms/step - loss: 0.0018 - pr_auc: 0.7687 - val_loss: 0.0018 - val_pr_auc: 0.8117
+Epoch 14/50
+42/42 - 2s - 50ms/step - loss: 0.0017 - pr_auc: 0.7808 - val_loss: 0.0017 - val_pr_auc: 0.8224
+Epoch 15/50
+42/42 - 2s - 53ms/step - loss: 0.0017 - pr_auc: 0.8001 - val_loss: 0.0016 - val_pr_auc: 0.8360
+Epoch 16/50
+42/42 - 2s - 56ms/step - loss: 0.0016 - pr_auc: 0.8108 - val_loss: 0.0016 - val_pr_auc: 0.8444
+Epoch 17/50
+42/42 - 2s - 57ms/step - loss: 0.0015 - pr_auc: 0.8273 - val_loss: 0.0016 - val_pr_auc: 0.8551
+Epoch 18/50
+42/42 - 2s - 56ms/step - loss: 0.0014 - pr_auc: 0.8464 - val_loss: 0.0016 - val_pr_auc: 0.8618
+Epoch 19/50
+42/42 - 2s - 57ms/step - loss: 0.0013 - pr_auc: 0.8548 - val_loss: 0.0016 - val_pr_auc: 0.8691
+Epoch 20/50
+42/42 - 2s - 55ms/step - loss: 0.0013 - pr_auc: 0.8707 - val_loss: 0.0016 - val_pr_auc: 0.8679
+Epoch 21/50
+42/42 - 2s - 57ms/step - loss: 0.0011 - pr_auc: 0.8861 - val_loss: 0.0015 - val_pr_auc: 0.8757
+Epoch 22/50
+42/42 - 3s - 60ms/step - loss: 0.0011 - pr_auc: 0.8885 - val_loss: 0.0015 - val_pr_auc: 0.8711
+Epoch 23/50
+42/42 - 2s - 57ms/step - loss: 9.9782e-04 - pr_auc: 0.9049 - val_loss: 0.0014 - val_pr_auc: 0.8722
+    val PR-AUC=0.876  ROC=0.9886  epochs=23  (1.09 min)
+
+--- window=10 seed=42 ---
+Epoch 1/50
+42/42 - 14s - 345ms/step - loss: 0.0269 - pr_auc: 0.0153 - val_loss: 0.0051 - val_pr_auc: 0.4948
+Epoch 2/50
+42/42 - 6s - 145ms/step - loss: 0.0038 - pr_auc: 0.3856 - val_loss: 0.0031 - val_pr_auc: 0.6286
+Epoch 3/50
+42/42 - 6s - 143ms/step - loss: 0.0029 - pr_auc: 0.5878 - val_loss: 0.0027 - val_pr_auc: 0.6989
+Epoch 4/50
+42/42 - 6s - 148ms/step - loss: 0.0025 - pr_auc: 0.6618 - val_loss: 0.0025 - val_pr_auc: 0.7304
+Epoch 5/50
+42/42 - 6s - 145ms/step - loss: 0.0023 - pr_auc: 0.6772 - val_loss: 0.0023 - val_pr_auc: 0.7474
+Epoch 6/50
+42/42 - 6s - 148ms/step - loss: 0.0022 - pr_auc: 0.7091 - val_loss: 0.0022 - val_pr_auc: 0.7605
+Epoch 7/50
+42/42 - 6s - 149ms/step - loss: 0.0021 - pr_auc: 0.7228 - val_loss: 0.0021 - val_pr_auc: 0.7727
+Epoch 8/50
+42/42 - 6s - 139ms/step - loss: 0.0020 - pr_auc: 0.7419 - val_loss: 0.0020 - val_pr_auc: 0.7830
+Epoch 9/50
+42/42 - 6s - 133ms/step - loss: 0.0019 - pr_auc: 0.7532 - val_loss: 0.0020 - val_pr_auc: 0.7911
+Epoch 10/50
+42/42 - 5s - 125ms/step - loss: 0.0018 - pr_auc: 0.7663 - val_loss: 0.0020 - val_pr_auc: 0.8008
+Epoch 11/50
+42/42 - 5s - 128ms/step - loss: 0.0017 - pr_auc: 0.7805 - val_loss: 0.0019 - val_pr_auc: 0.8086
+Epoch 12/50
+42/42 - 5s - 128ms/step - loss: 0.0017 - pr_auc: 0.7940 - val_loss: 0.0019 - val_pr_auc: 0.8175
+Epoch 13/50
+42/42 - 5s - 128ms/step - loss: 0.0016 - pr_auc: 0.8082 - val_loss: 0.0018 - val_pr_auc: 0.8270
+Epoch 14/50
+42/42 - 5s - 129ms/step - loss: 0.0015 - pr_auc: 0.8255 - val_loss: 0.0017 - val_pr_auc: 0.8354
+Epoch 15/50
+42/42 - 5s - 130ms/step - loss: 0.0015 - pr_auc: 0.8355 - val_loss: 0.0017 - val_pr_auc: 0.8482
+Epoch 16/50
+42/42 - 11s - 250ms/step - loss: 0.0014 - pr_auc: 0.8526 - val_loss: 0.0017 - val_pr_auc: 0.8497
+Epoch 17/50
+42/42 - 5s - 128ms/step - loss: 0.0013 - pr_auc: 0.8687 - val_loss: 0.0017 - val_pr_auc: 0.8529
+Epoch 18/50
+42/42 - 5s - 127ms/step - loss: 0.0012 - pr_auc: 0.8747 - val_loss: 0.0018 - val_pr_auc: 0.8535
+Epoch 19/50
+42/42 - 5s - 129ms/step - loss: 0.0011 - pr_auc: 0.8866 - val_loss: 0.0017 - val_pr_auc: 0.8552
+Epoch 20/50
+42/42 - 5s - 125ms/step - loss: 0.0011 - pr_auc: 0.8994 - val_loss: 0.0016 - val_pr_auc: 0.8567
+Epoch 21/50
+42/42 - 5s - 123ms/step - loss: 0.0010 - pr_auc: 0.9060 - val_loss: 0.0018 - val_pr_auc: 0.8520
+Epoch 22/50
+42/42 - 5s - 129ms/step - loss: 9.7542e-04 - pr_auc: 0.9118 - val_loss: 0.0018 - val_pr_auc: 0.8467
+    val PR-AUC=0.857  ROC=0.9784  epochs=22  (2.36 min)
+
+--- window=10 seed=7 ---
+Epoch 1/50
+42/42 - 9s - 203ms/step - loss: 0.0219 - pr_auc: 0.0113 - val_loss: 0.0046 - val_pr_auc: 0.3703
+Epoch 2/50
+42/42 - 3s - 75ms/step - loss: 0.0034 - pr_auc: 0.4219 - val_loss: 0.0031 - val_pr_auc: 0.6213
+Epoch 3/50
+42/42 - 3s - 75ms/step - loss: 0.0026 - pr_auc: 0.6131 - val_loss: 0.0025 - val_pr_auc: 0.6966
+Epoch 4/50
+42/42 - 3s - 78ms/step - loss: 0.0023 - pr_auc: 0.6680 - val_loss: 0.0023 - val_pr_auc: 0.7280
+Epoch 5/50
+42/42 - 3s - 76ms/step - loss: 0.0022 - pr_auc: 0.7057 - val_loss: 0.0022 - val_pr_auc: 0.7449
+Epoch 6/50
+42/42 - 3s - 79ms/step - loss: 0.0021 - pr_auc: 0.7209 - val_loss: 0.0021 - val_pr_auc: 0.7556
+Epoch 7/50
+42/42 - 3s - 73ms/step - loss: 0.0020 - pr_auc: 0.7313 - val_loss: 0.0021 - val_pr_auc: 0.7666
+Epoch 8/50
+42/42 - 3s - 76ms/step - loss: 0.0019 - pr_auc: 0.7521 - val_loss: 0.0020 - val_pr_auc: 0.7726
+Epoch 9/50
+42/42 - 3s - 76ms/step - loss: 0.0018 - pr_auc: 0.7703 - val_loss: 0.0020 - val_pr_auc: 0.7853
+Epoch 10/50
+42/42 - 3s - 77ms/step - loss: 0.0018 - pr_auc: 0.7777 - val_loss: 0.0019 - val_pr_auc: 0.7917
+Epoch 11/50
+42/42 - 3s - 76ms/step - loss: 0.0017 - pr_auc: 0.7944 - val_loss: 0.0019 - val_pr_auc: 0.7997
+Epoch 12/50
+42/42 - 3s - 75ms/step - loss: 0.0016 - pr_auc: 0.7982 - val_loss: 0.0018 - val_pr_auc: 0.8099
+Epoch 13/50
+42/42 - 3s - 75ms/step - loss: 0.0015 - pr_auc: 0.8154 - val_loss: 0.0018 - val_pr_auc: 0.8194
+Epoch 14/50
+42/42 - 3s - 74ms/step - loss: 0.0015 - pr_auc: 0.8272 - val_loss: 0.0017 - val_pr_auc: 0.8289
+Epoch 15/50
+42/42 - 3s - 78ms/step - loss: 0.0014 - pr_auc: 0.8345 - val_loss: 0.0017 - val_pr_auc: 0.8378
+Epoch 16/50
+42/42 - 3s - 81ms/step - loss: 0.0013 - pr_auc: 0.8522 - val_loss: 0.0017 - val_pr_auc: 0.8451
+Epoch 17/50
+42/42 - 3s - 77ms/step - loss: 0.0013 - pr_auc: 0.8609 - val_loss: 0.0017 - val_pr_auc: 0.8484
+Epoch 18/50
+42/42 - 3s - 79ms/step - loss: 0.0012 - pr_auc: 0.8735 - val_loss: 0.0017 - val_pr_auc: 0.8510
+Epoch 19/50
+42/42 - 3s - 77ms/step - loss: 0.0011 - pr_auc: 0.8864 - val_loss: 0.0017 - val_pr_auc: 0.8520
+Epoch 20/50
+42/42 - 3s - 80ms/step - loss: 0.0011 - pr_auc: 0.8973 - val_loss: 0.0018 - val_pr_auc: 0.8483
+Epoch 21/50
+42/42 - 3s - 80ms/step - loss: 9.9141e-04 - pr_auc: 0.9063 - val_loss: 0.0017 - val_pr_auc: 0.8524
+Epoch 22/50
+42/42 - 3s - 79ms/step - loss: 8.9974e-04 - pr_auc: 0.9220 - val_loss: 0.0019 - val_pr_auc: 0.8506
+Epoch 23/50
+42/42 - 3s - 75ms/step - loss: 8.4537e-04 - pr_auc: 0.9265 - val_loss: 0.0017 - val_pr_auc: 0.8567
+Epoch 24/50
+42/42 - 3s - 81ms/step - loss: 8.0053e-04 - pr_auc: 0.9338 - val_loss: 0.0018 - val_pr_auc: 0.8578
+Epoch 25/50
+42/42 - 3s - 77ms/step - loss: 7.0881e-04 - pr_auc: 0.9446 - val_loss: 0.0018 - val_pr_auc: 0.8608
+Epoch 26/50
+42/42 - 5s - 122ms/step - loss: 6.9946e-04 - pr_auc: 0.9450 - val_loss: 0.0018 - val_pr_auc: 0.8573
+Epoch 27/50
+42/42 - 3s - 73ms/step - loss: 6.4875e-04 - pr_auc: 0.9516 - val_loss: 0.0020 - val_pr_auc: 0.8467
+    val PR-AUC=0.8613  ROC=0.9847  epochs=27  (1.64 min)
+
+--- window=10 seed=123 ---
+Epoch 1/50
+42/42 - 14s - 334ms/step - loss: 0.0343 - pr_auc: 0.0097 - val_loss: 0.0081 - val_pr_auc: 0.2503
+Epoch 2/50
+42/42 - 8s - 184ms/step - loss: 0.0045 - pr_auc: 0.2679 - val_loss: 0.0038 - val_pr_auc: 0.5628
+Epoch 3/50
+42/42 - 7s - 161ms/step - loss: 0.0030 - pr_auc: 0.5565 - val_loss: 0.0028 - val_pr_auc: 0.6956
+Epoch 4/50
+42/42 - 7s - 160ms/step - loss: 0.0025 - pr_auc: 0.6526 - val_loss: 0.0024 - val_pr_auc: 0.7379
+Epoch 5/50
+42/42 - 7s - 165ms/step - loss: 0.0023 - pr_auc: 0.6937 - val_loss: 0.0022 - val_pr_auc: 0.7601
+Epoch 6/50
+42/42 - 7s - 163ms/step - loss: 0.0021 - pr_auc: 0.7115 - val_loss: 0.0021 - val_pr_auc: 0.7710
+Epoch 7/50
+42/42 - 7s - 164ms/step - loss: 0.0020 - pr_auc: 0.7295 - val_loss: 0.0020 - val_pr_auc: 0.7795
+Epoch 8/50
+42/42 - 7s - 165ms/step - loss: 0.0020 - pr_auc: 0.7424 - val_loss: 0.0020 - val_pr_auc: 0.7871
+Epoch 9/50
+42/42 - 7s - 163ms/step - loss: 0.0019 - pr_auc: 0.7548 - val_loss: 0.0019 - val_pr_auc: 0.7933
+Epoch 10/50
+42/42 - 7s - 167ms/step - loss: 0.0018 - pr_auc: 0.7647 - val_loss: 0.0019 - val_pr_auc: 0.8031
+Epoch 11/50
+42/42 - 7s - 159ms/step - loss: 0.0018 - pr_auc: 0.7797 - val_loss: 0.0018 - val_pr_auc: 0.8069
+Epoch 12/50
+42/42 - 7s - 162ms/step - loss: 0.0017 - pr_auc: 0.7866 - val_loss: 0.0018 - val_pr_auc: 0.8138
+Epoch 13/50
+42/42 - 7s - 159ms/step - loss: 0.0017 - pr_auc: 0.7987 - val_loss: 0.0018 - val_pr_auc: 0.8195
+Epoch 14/50
+42/42 - 7s - 160ms/step - loss: 0.0016 - pr_auc: 0.8104 - val_loss: 0.0017 - val_pr_auc: 0.8234
+Epoch 15/50
+42/42 - 7s - 158ms/step - loss: 0.0015 - pr_auc: 0.8232 - val_loss: 0.0017 - val_pr_auc: 0.8332
+Epoch 16/50
+42/42 - 7s - 160ms/step - loss: 0.0014 - pr_auc: 0.8383 - val_loss: 0.0017 - val_pr_auc: 0.8382
+Epoch 17/50
+42/42 - 7s - 158ms/step - loss: 0.0014 - pr_auc: 0.8506 - val_loss: 0.0017 - val_pr_auc: 0.8446
+Epoch 18/50
+42/42 - 7s - 166ms/step - loss: 0.0013 - pr_auc: 0.8639 - val_loss: 0.0016 - val_pr_auc: 0.8452
+Epoch 19/50
+42/42 - 10s - 245ms/step - loss: 0.0012 - pr_auc: 0.8750 - val_loss: 0.0016 - val_pr_auc: 0.8439
+Epoch 20/50
+42/42 - 7s - 164ms/step - loss: 0.0012 - pr_auc: 0.8802 - val_loss: 0.0016 - val_pr_auc: 0.8444
+    val PR-AUC=0.8456  ROC=0.9759  epochs=20  (2.53 min)
+
+--- window=20 seed=42 ---
+Epoch 1/50
+42/42 - 13s - 309ms/step - loss: 0.0221 - pr_auc: 0.0136 - val_loss: 0.0048 - val_pr_auc: 0.3804
+Epoch 2/50
+42/42 - 7s - 158ms/step - loss: 0.0040 - pr_auc: 0.2430 - val_loss: 0.0029 - val_pr_auc: 0.6369
+Epoch 3/50
+42/42 - 7s - 158ms/step - loss: 0.0028 - pr_auc: 0.5592 - val_loss: 0.0024 - val_pr_auc: 0.7233
+Epoch 4/50
+42/42 - 7s - 156ms/step - loss: 0.0024 - pr_auc: 0.6546 - val_loss: 0.0022 - val_pr_auc: 0.7687
+Epoch 5/50
+42/42 - 7s - 155ms/step - loss: 0.0023 - pr_auc: 0.6940 - val_loss: 0.0020 - val_pr_auc: 0.7912
+Epoch 6/50
+42/42 - 6s - 152ms/step - loss: 0.0021 - pr_auc: 0.7281 - val_loss: 0.0019 - val_pr_auc: 0.8057
+Epoch 7/50
+42/42 - 7s - 168ms/step - loss: 0.0020 - pr_auc: 0.7450 - val_loss: 0.0018 - val_pr_auc: 0.8186
+Epoch 8/50
+42/42 - 7s - 167ms/step - loss: 0.0019 - pr_auc: 0.7668 - val_loss: 0.0018 - val_pr_auc: 0.8216
+Epoch 9/50
+42/42 - 7s - 167ms/step - loss: 0.0018 - pr_auc: 0.7798 - val_loss: 0.0017 - val_pr_auc: 0.8270
+Epoch 10/50
+42/42 - 10s - 238ms/step - loss: 0.0017 - pr_auc: 0.7890 - val_loss: 0.0017 - val_pr_auc: 0.8345
+Epoch 11/50
+42/42 - 7s - 156ms/step - loss: 0.0017 - pr_auc: 0.8043 - val_loss: 0.0017 - val_pr_auc: 0.8390
+Epoch 12/50
+42/42 - 10s - 247ms/step - loss: 0.0016 - pr_auc: 0.8162 - val_loss: 0.0016 - val_pr_auc: 0.8472
+Epoch 13/50
+42/42 - 7s - 157ms/step - loss: 0.0015 - pr_auc: 0.8272 - val_loss: 0.0016 - val_pr_auc: 0.8516
+Epoch 14/50
+42/42 - 6s - 150ms/step - loss: 0.0015 - pr_auc: 0.8351 - val_loss: 0.0016 - val_pr_auc: 0.8486
+Epoch 15/50
+42/42 - 11s - 253ms/step - loss: 0.0014 - pr_auc: 0.8507 - val_loss: 0.0016 - val_pr_auc: 0.8565
+Epoch 16/50
+42/42 - 6s - 150ms/step - loss: 0.0014 - pr_auc: 0.8514 - val_loss: 0.0016 - val_pr_auc: 0.8599
+Epoch 17/50
+42/42 - 7s - 162ms/step - loss: 0.0013 - pr_auc: 0.8646 - val_loss: 0.0016 - val_pr_auc: 0.8579
+Epoch 18/50
+42/42 - 7s - 167ms/step - loss: 0.0012 - pr_auc: 0.8771 - val_loss: 0.0017 - val_pr_auc: 0.8474
+    val PR-AUC=0.8601  ROC=0.9785  epochs=18  (2.41 min)
+
+--- window=20 seed=7 ---
+Epoch 1/50
+42/42 - 22s - 518ms/step - loss: 0.0229 - pr_auc: 0.0135 - val_loss: 0.0055 - val_pr_auc: 0.4437
+Epoch 2/50
+42/42 - 15s - 356ms/step - loss: 0.0041 - pr_auc: 0.2581 - val_loss: 0.0032 - val_pr_auc: 0.6097
+Epoch 3/50
+42/42 - 15s - 358ms/step - loss: 0.0029 - pr_auc: 0.5745 - val_loss: 0.0024 - val_pr_auc: 0.7169
+Epoch 4/50
+42/42 - 15s - 356ms/step - loss: 0.0024 - pr_auc: 0.6536 - val_loss: 0.0022 - val_pr_auc: 0.7552
+Epoch 5/50
+42/42 - 15s - 358ms/step - loss: 0.0022 - pr_auc: 0.7136 - val_loss: 0.0021 - val_pr_auc: 0.7782
+Epoch 6/50
+42/42 - 15s - 356ms/step - loss: 0.0020 - pr_auc: 0.7474 - val_loss: 0.0021 - val_pr_auc: 0.7865
+Epoch 7/50
+42/42 - 15s - 358ms/step - loss: 0.0019 - pr_auc: 0.7636 - val_loss: 0.0020 - val_pr_auc: 0.7963
+Epoch 8/50
+42/42 - 15s - 353ms/step - loss: 0.0017 - pr_auc: 0.7896 - val_loss: 0.0020 - val_pr_auc: 0.8040
+Epoch 9/50
+42/42 - 15s - 351ms/step - loss: 0.0017 - pr_auc: 0.7957 - val_loss: 0.0020 - val_pr_auc: 0.8088
+Epoch 10/50
+42/42 - 15s - 356ms/step - loss: 0.0016 - pr_auc: 0.8087 - val_loss: 0.0020 - val_pr_auc: 0.8146
+Epoch 11/50
+42/42 - 21s - 490ms/step - loss: 0.0015 - pr_auc: 0.8266 - val_loss: 0.0019 - val_pr_auc: 0.8211
+Epoch 12/50
+42/42 - 15s - 347ms/step - loss: 0.0015 - pr_auc: 0.8349 - val_loss: 0.0019 - val_pr_auc: 0.8275
+Epoch 13/50
+42/42 - 15s - 358ms/step - loss: 0.0014 - pr_auc: 0.8416 - val_loss: 0.0020 - val_pr_auc: 0.8277
+Epoch 14/50
+42/42 - 23s - 543ms/step - loss: 0.0013 - pr_auc: 0.8581 - val_loss: 0.0019 - val_pr_auc: 0.8313
+Epoch 15/50
+42/42 - 18s - 437ms/step - loss: 0.0012 - pr_auc: 0.8674 - val_loss: 0.0020 - val_pr_auc: 0.8318
+Epoch 16/50
+42/42 - 15s - 349ms/step - loss: 0.0012 - pr_auc: 0.8783 - val_loss: 0.0019 - val_pr_auc: 0.8332
+Epoch 17/50
+42/42 - 14s - 342ms/step - loss: 0.0011 - pr_auc: 0.8908 - val_loss: 0.0021 - val_pr_auc: 0.8238
+Epoch 18/50
+42/42 - 15s - 348ms/step - loss: 0.0010 - pr_auc: 0.9002 - val_loss: 0.0021 - val_pr_auc: 0.8243
+    val PR-AUC=0.8338  ROC=0.9667  epochs=18  (4.97 min)
+
+--- window=20 seed=123 ---
+Epoch 1/50
+42/42 - 18s - 419ms/step - loss: 0.0235 - pr_auc: 0.0103 - val_loss: 0.0053 - val_pr_auc: 0.2729
+Epoch 2/50
+42/42 - 11s - 254ms/step - loss: 0.0043 - pr_auc: 0.2175 - val_loss: 0.0031 - val_pr_auc: 0.6120
+Epoch 3/50
+42/42 - 10s - 248ms/step - loss: 0.0029 - pr_auc: 0.5394 - val_loss: 0.0024 - val_pr_auc: 0.7292
+Epoch 4/50
+42/42 - 10s - 247ms/step - loss: 0.0024 - pr_auc: 0.6536 - val_loss: 0.0021 - val_pr_auc: 0.7704
+Epoch 5/50
+42/42 - 11s - 255ms/step - loss: 0.0022 - pr_auc: 0.7107 - val_loss: 0.0020 - val_pr_auc: 0.7898
+Epoch 6/50
+42/42 - 11s - 254ms/step - loss: 0.0021 - pr_auc: 0.7281 - val_loss: 0.0019 - val_pr_auc: 0.8038
+Epoch 7/50
+42/42 - 20s - 487ms/step - loss: 0.0019 - pr_auc: 0.7683 - val_loss: 0.0019 - val_pr_auc: 0.8111
+Epoch 8/50
+42/42 - 11s - 258ms/step - loss: 0.0018 - pr_auc: 0.7862 - val_loss: 0.0018 - val_pr_auc: 0.8178
+Epoch 9/50
+42/42 - 11s - 267ms/step - loss: 0.0017 - pr_auc: 0.8023 - val_loss: 0.0019 - val_pr_auc: 0.8223
+Epoch 10/50
+42/42 - 21s - 509ms/step - loss: 0.0016 - pr_auc: 0.8157 - val_loss: 0.0018 - val_pr_auc: 0.8294
+Epoch 11/50
+42/42 - 15s - 346ms/step - loss: 0.0015 - pr_auc: 0.8334 - val_loss: 0.0018 - val_pr_auc: 0.8314
+Epoch 12/50
+42/42 - 15s - 350ms/step - loss: 0.0014 - pr_auc: 0.8460 - val_loss: 0.0018 - val_pr_auc: 0.8348
+Epoch 13/50
+42/42 - 15s - 358ms/step - loss: 0.0013 - pr_auc: 0.8584 - val_loss: 0.0017 - val_pr_auc: 0.8400
+Epoch 14/50
+42/42 - 20s - 479ms/step - loss: 0.0013 - pr_auc: 0.8686 - val_loss: 0.0017 - val_pr_auc: 0.8454
+Epoch 15/50
+42/42 - 15s - 363ms/step - loss: 0.0012 - pr_auc: 0.8744 - val_loss: 0.0018 - val_pr_auc: 0.8433
+Epoch 16/50
+42/42 - 15s - 355ms/step - loss: 0.0012 - pr_auc: 0.8809 - val_loss: 0.0018 - val_pr_auc: 0.8448
+    val PR-AUC=0.846  ROC=0.9709  epochs=16  (3.94 min)
+
+============================================================
+WINDOW SWEEP RESULT  (validation PR-AUC)
+============================================================
+ window   mean    std  n
+      3 0.9472 0.0111  3
+      5 0.8857 0.0229  3
+     10 0.8546 0.0081  3
+     20 0.8466 0.0132  3
+
+  best mean PR-AUC : window=3 (0.9472)
