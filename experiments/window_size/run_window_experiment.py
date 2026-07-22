@@ -20,7 +20,7 @@ METHOD NOTES (these matter for your write-up)
     best weights (Keras' AUC(curve='PR') is a threshold approximation - fine for
     early stopping, but report the exact value).
 """
-import sys, os, copy, time
+import sys, os, copy, time, datetime
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 import numpy as np
@@ -31,15 +31,14 @@ from src.config import load_config, path
 from src.features.phase1_features import build_dataset
 from src.models.phase2_model import train_model
 
-WINDOWS = [3, 5, 10, 20]      # 12 added: burst analysis pointed near 10-12
-SEEDS = [42, 7, 123]                          # -> [42, 7, 123] for the reportable multi-seed run
-
+WINDOWS = [1, 2, 3, 5, 10, 15, 20, 25, 30]      
+SEEDS = [42, 7, 123]                         
 
 def run_one(window, seed, base_cfg):
     """Build data + train one model at this window size. Returns metrics dict."""
     cfg = copy.deepcopy(base_cfg)
     cfg["features"]["window"] = window          # the ONLY thing that changes
-
+ 
     t0 = time.time()
     data = build_dataset(path(cfg["data"]["train_csv"]),
                          nrows=cfg["data"]["nrows"],
@@ -81,15 +80,17 @@ def main():
             print(f"    val PR-AUC={r['val_pr_auc']}  ROC={r['val_roc_auc']}  "
                   f"epochs={r['epochs_run']}  ({r['minutes']} min)\n")
 
+    
+    TAG = datetime.datetime.now().strftime("%Y%m%d_%H%M")
     df = pd.DataFrame(rows)
-    out_raw = path("results/metrics/phase5a_window_sweep_raw.csv")
+    out_raw = path(f"results/metrics/phase5a_window_sweep_raw_{TAG}.csv")
     df.to_csv(out_raw, index=False)
 
     # summary across seeds
     summ = (df.groupby("window")["val_pr_auc"]
               .agg(mean="mean", std="std", n="count")
               .round(4).reset_index())
-    out_sum = path("results/metrics/phase5a_window_sweep_summary.csv")
+    out_sum = path(f"results/metrics/phase5a_window_sweep_summary_{TAG}.csv")
     summ.to_csv(out_sum, index=False)
 
     print("=" * 60)
@@ -122,7 +123,7 @@ def main():
     plt.ylabel("validation PR-AUC")
     plt.title("Phase 5a - window size sweep")
     plt.grid(alpha=0.3); plt.tight_layout()
-    fig = path("results/figures/phase5a_window_sweep.png")
+    fig = path(f"results/figures/phase5a_window_sweep_{TAG}.png")
     plt.savefig(fig, dpi=130)
 
     print(f"\nsaved -> {out_sum}, {out_raw}, {fig}")
